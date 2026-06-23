@@ -1,0 +1,287 @@
+classdef PosControllerSystem < matlab.System & matlab.system.mixin.Propagates
+    % PosControllerSystem  Position controller with internal integrator and simple preprocessing
+    %
+    % Inputs (each 3x1 except yaw scalars):
+    %   pos, vel, measured_yaw, sp_pos, sp_vel, sp_acc, setpoint_yaw
+    %
+    % Outputs:
+    %   thrust, roll, pitch, F_d (3x1), e_pos
+    %
+    % Internal states: e_int (3x1), prev_fpos (3x1), prev_fvel (3x1)
+    
+    properties
+        % No public tunable properties for this patch (keep hardcoded)
+    end
+    
+    properties (Access = private)
+        % controller and physical constants
+        dt = 0.02;
+        mass_total = 0.04;
+        g = 9.81;
+        % Separate gains per axis [X; Y; Z]
+        Kp = [0.047; 0.047; 0.05];
+        Kv = [0.0; 0.0; 0.0];
+        Ki = [0.0; 0.0; 0.0];
+        Mmax = 3.0;
+        thrust_min = -1.0;
+        thrust_max = 1.0;
+        max_tilt = deg2rad(25);
+        anti_mode = 'conditional'; % or 'backcalc'
+        backcalc_gain = 0.000001;
+        
+        % internal states
+        e_int      % 3x1
+        prev_fpos  % 3x1
+        prev_fvel  % 3x1
+        
+        % filter alphas (for preprocess)
+        alpha_pos = 0.8;
+        alpha_vel = 0.6;
+        
+        gravityGain = -0.325;
+        % yaw integrator or storage (optional)
+        yaw_int = 0;
+
+        initial_heading = 0;
+        heading_initialized = false;
+        
+    end
+    
+    methods (Access = protected)
+        function setupImpl(obj)
+            % Initialize internal states on simulation start
+            obj.e_int = zeros(3,1);
+            obj.prev_fpos = zeros(3,1);
+            obj.prev_fvel = zeros(3,1);
+            obj.yaw_int = 0;
+            obj.heading_initialized = false;
+            obj.initial_heading = 0;
+        end
+
+        function [thrust, roll, pitch, F_d, e_pos] = stepImpl(obj, pos, vel, measured_yaw, sp_pos, sp_vel, sp_acc, setpoint_yaw)
+            % Preprocess: ensure column vectors
+            pos = pos(:); vel = vel(:);
+            sp_pos = sp_pos(:); sp_vel = sp_vel(:); sp_acc = sp_acc(:);
+            measured_yaw = double(measured_yaw(:));
+            setpoint_yaw  = double(setpoint_yaw(:));
+            
+            % Initialize heading reference on first run
+            if ~obj.heading_initialized
+                obj.initial_heading = measured_yaw;
+                obj.heading_initialized = true;
+            end
+
+            % Initialize previous filtered if first call (zero -> use raw)
+            if isempty(obj.prev_fpos)
+                obj.prev_fpos = pos;
+            end
+            if isempty(obj.prev_fvel)
+                obj.prev_fvel = vel;
+            end
+            
+            fpos = obj.alpha_pos * pos + (1 - obj.alpha_pos) * obj.prev_fpos;
+            fvel = obj.alpha_vel * vel + (1 - obj.alpha_vel) * obj.prev_fvel;
+            obj.prev_fpos = fpos;
+            obj.prev_fvel = fvel;
+            
+            % Errors (position/velocity)
+            e_pos = sp_pos - fpos;
+            e_vel = sp_vel - fvel;
+            
+            % Compute yaw error (wrapped) for possible yaw control usage
+            yaw_error = obj.wrapToPi(setpoint_yaw - measured_yaw);
+            % Optionally accumulate yaw integrator:
+            % obj.yaw_int = obj.yaw_int + yaw_error * obj.dt;
+            % (Left unused here unless you add yaw PID)
+            
+            % PD terms and mass feedforward (position control)
+            % Use elementwise gains per axis
+            pos_term = obj.Kp .* e_pos;
+            %pos_term(1) = 0.001;
+            %pos_term(2) = 0.001;
+            vel_term = obj.Kv .* e_vel;
+            mass_term = obj.mass_total * sp_acc;
+            
+            % Saturate position term magnitude (preserve direction)
+            npos = norm(pos_term);
+            if npos > 0
+                if npos > obj.Mmax
+                    pos_term_sat = (obj.Mmax / npos) * pos_term;
+                else
+                    pos_term_sat = pos_term;
+                end
+            else
+                pos_term_sat = pos_term;
+            end
+            
+            % Tentative integrator update
+            e_int_tent = obj.e_int + obj.dt * e_pos;
+            
+            % Tentative F_d including integral (elementwise Ki)
+            F_d_tent = pos_term_sat + vel_term + mass_term + obj.Ki .* e_int_tent;
+            
+            % Evaluate saturation conditions
+            nFd = norm(F_d_tent);
+            if nFd < 1e-8
+                uz = [0;0;1];
+            else
+                uz = F_d_tent / nFd;
+            end
+            thrust_tent = F_d_tent(3) + obj.mass_total * obj.g;
+            tilt = atan2(norm(F_d_tent(1:2)), max(abs(F_d_tent(3)), 1e-12));
+            thrust_saturated = (thrust_tent < obj.thrust_min) || (thrust_tent > obj.thrust_max);
+            tilt_exceeded = (tilt > obj.max_tilt);
+            
+            % Anti-windup
+            switch lower(obj.anti_mode)
+                case 'conditional'
+                    if thrust_saturated || tilt_exceeded
+                        e_int_out = obj.e_int; % do not integrate
+                    else
+                        e_int_out = e_int_tent;
+                    end
+                case 'backcalc'
+                    thrust_sat = min(max(thrust_tent, obj.thrust_min), obj.thrust_max);
+                    sat_err = thrust_sat - thrust_tent;
+                    % back-calculation applied to Z integrator component (as before)
+                    % keep X/Y integrator unchanged
+                    e_int_out = e_int_tent + obj.backcalc_gain * [0;0;sat_err] * obj.dt;
+                otherwise
+                    e_int_out = e_int_tent;
+            end
+            
+            % Commit integrator state
+            obj.e_int = e_int_out;
+            
+            % Final F_d (elementwise Ki)
+            F_d = pos_term_sat + vel_term + mass_term + obj.Ki .* obj.e_int;
+            
+            % Thrust output and limits
+            thrust = F_d(3) + obj.gravityGain; %(obj.mass_total * obj.g)*obj.gravityGain;
+            %thrust = min(max(thrust, obj.thrust_min), obj.thrust_max);
+            %thrust = obj.maprange(thrust,0,1,-1,1);
+            %thrust = ;
+            % Attitude (roll/pitch) from F_d and desired yaw
+            % Use setpoint_yaw to construct desired heading vector uyt
+            %yaw_dt = setpoint_yaw + pi/2;
+            %uyt = [cos(yaw_dt); sin(yaw_dt); 0];
+            
+            % compute heading relative to controller's position frame
+            yaw_rel = obj.wrapToPi(measured_yaw - obj.initial_heading);
+            % use current vehicle heading (relative) to orient body X-Y basis
+            yaw_dt = yaw_rel + pi/2;
+            uyt = [cos(yaw_dt); sin(yaw_dt); 0];
+            
+            nFd = norm(F_d);
+            if nFd < 1e-8
+                uz = [0;0;1];
+                ux = cross(uyt, uz);
+                if norm(ux) < 1e-8
+                    ux = [1;0;0];
+                else
+                    ux = ux / norm(ux);
+                end
+                uy = cross(uz, ux);
+            else
+                uz = F_d / nFd;
+                ux = cross(uyt, uz);
+                if norm(ux) < 1e-8
+                    if abs(uz(3)) < 0.99
+                        tmp = [0;0;1];
+                    else
+                        tmp = [1;0;0];
+                    end
+                    ux = cross(tmp, uz);
+                    ux = ux / norm(ux);
+                else
+                    ux = ux / norm(ux);
+                end
+                uy = cross(uz, ux);
+            end
+            R = [ux uy uz];
+            sy = sqrt(R(3,2)^2 + R(3,3)^2);
+            if sy > 1e-8
+                pitch = atan2(-R(3,1), sy);
+                roll  = atan2(R(3,2), R(3,3));
+            else
+                pitch = atan2(-R(3,1), sy);
+                roll  = 0;
+            end
+            % Output the computed roll and pitch angles
+            roll = -1*roll; 
+            pitch = pitch;
+            e_pos = e_pos;
+        end
+        
+        function resetImpl(obj)
+            % Reset internal states (called when simulation reset)
+            obj.e_int = zeros(3,1);
+            obj.prev_fpos = zeros(3,1);
+            obj.prev_fvel = zeros(3,1);
+            obj.yaw_int = 0;
+        end
+        
+        % Propagate sizes/types for Simulink
+        function num = getNumInputsImpl(~)
+            % New number of inputs: 7
+            num = 7;
+        end
+        function num = getNumOutputsImpl(~)
+            num = 5;
+        end
+        function flag = isInputSizeMutableImpl(~, ~)
+            flag = false;
+        end
+        function [out1,out2,out3,out4,out5] = getOutputSizeImpl(~)
+            out1 = [1 1];    % thrust scalar
+            out2 = [1 1];    % roll scalar
+            out3 = [1 1];    % pitch scalar
+            out4 = [3 1];    % F_d vector
+            out5 = [3 1];    
+        end
+        function [out1,out2,out3,out4,out5] = getOutputDataTypeImpl(~)
+            out1 = 'double';
+            out2 = 'double';
+            out3 = 'double';
+            out4 = 'double';
+            out5 = 'double';
+        end
+        function [out1,out2,out3,out4,out5] = isOutputComplexImpl(~)
+            out1 = false; out2 = false; out3 = false; out4 = false; out5 = false;
+        end
+        function [out1,out2,out3,out4,out5] = isOutputFixedSizeImpl(~)
+            out1 = true; out2 = true; out3 = true; out4 = true;out5 = true;
+        end
+        
+        % Explicit input sizes and types to avoid Simulink inference issues
+        function [in1,in2,in3,in4,in5,in6,in7] = getInputSizeImpl(~)
+            in1 = [3 1];   % pos (fpos)
+            in2 = [3 1];   % vel (fvel)
+            in3 = [1 1];   % measured_yaw
+            in4 = [3 1];   % sp_pos
+            in5 = [3 1];   % sp_vel
+            in6 = [3 1];   % sp_acc
+            in7 = [1 1];   % setpoint_yaw
+        end
+        function [in1,in2,in3,in4,in5,in6,in7] = getInputDataTypeImpl(~)
+            in1 = 'double'; in2 = 'double'; in3 = 'double';
+            in4 = 'double'; in5 = 'double'; in6 = 'double'; in7 = 'double';
+        end
+        function [in1,in2,in3,in4,in5,in6,in7] = isInputComplexImpl(~)
+            in1=false; in2=false; in3=false; in4=false; in5=false; in6=false; in7=false;
+        end
+        function [in1,in2,in3,in4,in5,in6,in7] = isInputFixedSizeImpl(~)
+            in1=true; in2=true; in3=true; in4=true; in5=true; in6=true; in7=true;
+        end
+    end
+    
+    methods (Access = private)
+        function y = wrapToPi(~, x)
+            % Wrap angle to [-pi, pi]
+            y = mod(x + pi, 2*pi) - pi;
+        end
+        function y = maprange(~,x,a,b,c,d)
+            y = (x-a).*(d-c) / (b-a) + c;
+        end
+    end
+end

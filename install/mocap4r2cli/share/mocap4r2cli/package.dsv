@@ -1,0 +1,9 @@
+source;share/mocap4r2cli/hook/pythonpath.ps1
+source;share/mocap4r2cli/hook/pythonpath.dsv
+source;share/mocap4r2cli/hook/pythonpath.sh
+source;share/mocap4r2cli/hook/ament_prefix_path.ps1
+source;share/mocap4r2cli/hook/ament_prefix_path.dsv
+source;share/mocap4r2cli/hook/ament_prefix_path.sh
+source;../../build/mocap4r2cli/share/mocap4r2cli/hook/pythonpath_develop.ps1
+source;../../build/mocap4r2cli/share/mocap4r2cli/hook/pythonpath_develop.dsv
+source;../../build/mocap4r2cli/share/mocap4r2cli/hook/pythonpath_develop.sh

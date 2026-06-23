@@ -1,0 +1,4 @@
+Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs -- -j8 -l8
+Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs -- -j8 -l8
+Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs
+Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs

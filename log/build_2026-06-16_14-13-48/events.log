@@ -1,0 +1,565 @@
+[0.000000] (-) TimerEvent: {}
+[0.000390] (mocap4r2_msgs) JobQueued: {'identifier': 'mocap4r2_msgs', 'dependencies': OrderedDict()}
+[0.000421] (mocap4r2_optitrack_driver) JobQueued: {'identifier': 'mocap4r2_optitrack_driver', 'dependencies': OrderedDict([('mocap4r2_msgs', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs')])}
+[0.000444] (mocap4r2_msgs) JobStarted: {'identifier': 'mocap4r2_msgs'}
+[0.004389] (mocap4r2_msgs) JobProgress: {'identifier': 'mocap4r2_msgs', 'progress': 'cmake'}
+[0.004648] (mocap4r2_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/mello/mocap4r2_ws/src/mocap4r2_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_msgs'], 'cwd': '/home/mello/mocap4r2_ws/build/mocap4r2_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'mello'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mello'), ('OLDPWD', '/home/mello/mocap4r2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2559'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mello/mocap4r2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mello'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mello'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mello-ThinkPad-T14-Gen-2i:@/tmp/.ICE-unix/1531,unix/mello-ThinkPad-T14-Gen-2i:/tmp/.ICE-unix/1531'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9796fa9d_5506_48f6_a237_fd09c0d3b279'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XJYJR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mello/mocap4r2_ws/build/mocap4r2_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble')]), 'shell': False}
+[0.038558] (mocap4r2_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.073600] (mocap4r2_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.077989] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099876] (-) TimerEvent: {}
+[0.121661] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.126144] (mocap4r2_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.126231] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.126454] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.128296] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.181415] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.186164] (mocap4r2_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.186260] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.186559] (mocap4r2_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.187772] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199944] (-) TimerEvent: {}
+[0.267483] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.300132] (-) TimerEvent: {}
+[0.304044] (mocap4r2_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.314158] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.315520] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.317969] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.337326] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.355811] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.362452] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.369228] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.400309] (-) TimerEvent: {}
+[0.500627] (-) TimerEvent: {}
+[0.559032] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.600726] (-) TimerEvent: {}
+[0.694924] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700846] (-) TimerEvent: {}
+[0.801108] (-) TimerEvent: {}
+[0.878335] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.888496] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[0.889042] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.900147] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[0.900273] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.900333] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.900372] (mocap4r2_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.901183] (-) TimerEvent: {}
+[0.909975] (mocap4r2_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.996539] (mocap4r2_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.001289] (-) TimerEvent: {}
+[1.020265] (mocap4r2_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.027435] (mocap4r2_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/mello/mocap4r2_ws/build/mocap4r2_msgs\n'}
+[1.032866] (mocap4r2_msgs) CommandEnded: {'returncode': 0}
+[1.033530] (mocap4r2_msgs) JobProgress: {'identifier': 'mocap4r2_msgs', 'progress': 'build'}
+[1.033547] (mocap4r2_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mello/mocap4r2_ws/build/mocap4r2_msgs', '--', '-j8', '-l8'], 'cwd': '/home/mello/mocap4r2_ws/build/mocap4r2_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'mello'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mello'), ('OLDPWD', '/home/mello/mocap4r2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2559'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mello/mocap4r2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mello'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mello'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mello-ThinkPad-T14-Gen-2i:@/tmp/.ICE-unix/1531,unix/mello-ThinkPad-T14-Gen-2i:/tmp/.ICE-unix/1531'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9796fa9d_5506_48f6_a237_fd09c0d3b279'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XJYJR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mello/mocap4r2_ws/build/mocap4r2_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble')]), 'shell': False}
+[1.057756] (mocap4r2_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.063927] (mocap4r2_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.064064] (mocap4r2_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.069307] (mocap4r2_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_mocap4r2_msgs\n'}
+[1.101399] (-) TimerEvent: {}
+[1.201681] (-) TimerEvent: {}
+[1.215302] (mocap4r2_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.215869] (mocap4r2_msgs) StdoutLine: {'line': b'creating mocap4r2_msgs.egg-info\n'}
+[1.216067] (mocap4r2_msgs) StdoutLine: {'line': b'writing mocap4r2_msgs.egg-info/PKG-INFO\n'}
+[1.216184] (mocap4r2_msgs) StdoutLine: {'line': b'writing dependency_links to mocap4r2_msgs.egg-info/dependency_links.txt\n'}
+[1.216307] (mocap4r2_msgs) StdoutLine: {'line': b'writing top-level names to mocap4r2_msgs.egg-info/top_level.txt\n'}
+[1.216471] (mocap4r2_msgs) StdoutLine: {'line': b"writing manifest file 'mocap4r2_msgs.egg-info/SOURCES.txt'\n"}
+[1.217639] (mocap4r2_msgs) StdoutLine: {'line': b"reading manifest file 'mocap4r2_msgs.egg-info/SOURCES.txt'\n"}
+[1.218055] (mocap4r2_msgs) StdoutLine: {'line': b"writing manifest file 'mocap4r2_msgs.egg-info/SOURCES.txt'\n"}
+[1.238172] (mocap4r2_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_mocap4r2_msgs_egg\n'}
+[1.302185] (-) TimerEvent: {}
+[1.307393] (mocap4r2_msgs) StdoutLine: {'line': b'[  4%] Built target mocap4r2_msgs__rs\n'}
+[1.402383] (-) TimerEvent: {}
+[1.481860] (mocap4r2_msgs) StdoutLine: {'line': b'[  4%] Built target mocap4r2_msgs__cpp\n'}
+[1.482532] (mocap4r2_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/markers__functions.c.o\x1b[0m\n'}
+[1.484406] (mocap4r2_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/marker__functions.c.o\x1b[0m\n'}
+[1.484539] (mocap4r2_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/rigid_body__functions.c.o\x1b[0m\n'}
+[1.484602] (mocap4r2_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/imus_info__functions.c.o\x1b[0m\n'}
+[1.484668] (mocap4r2_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/rigid_bodies__functions.c.o\x1b[0m\n'}
+[1.484730] (mocap4r2_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/srv/detail/create_rigid_body__functions.c.o\x1b[0m\n'}
+[1.492840] (mocap4r2_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.493125] (mocap4r2_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.502496] (-) TimerEvent: {}
+[1.539503] (mocap4r2_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.552981] (mocap4r2_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libmocap4r2_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.581976] (mocap4r2_msgs) StdoutLine: {'line': b'[ 18%] Built target mocap4r2_msgs__rosidl_generator_c\n'}
+[1.590090] (mocap4r2_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.593136] (mocap4r2_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.593389] (mocap4r2_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.602610] (-) TimerEvent: {}
+[1.702969] (-) TimerEvent: {}
+[1.803267] (-) TimerEvent: {}
+[1.850836] (mocap4r2_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/imus_info__type_support.cpp.o\x1b[0m\n'}
+[1.851090] (mocap4r2_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/marker__type_support.cpp.o\x1b[0m\n'}
+[1.851180] (mocap4r2_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/markers__type_support.cpp.o\x1b[0m\n'}
+[1.903414] (-) TimerEvent: {}
+[2.003868] (-) TimerEvent: {}
+[2.060745] (mocap4r2_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/marker__type_support.cpp.o\x1b[0m\n'}
+[2.103972] (-) TimerEvent: {}
+[2.151977] (mocap4r2_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/marker__type_support.cpp.o\x1b[0m\n'}
+[2.175201] (mocap4r2_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/markers__type_support.cpp.o\x1b[0m\n'}
+[2.175437] (mocap4r2_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/markers__type_support.cpp.o\x1b[0m\n'}
+[2.175683] (mocap4r2_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[2.181475] (mocap4r2_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/marker__type_support.cpp.o\x1b[0m\n'}
+[2.199022] (mocap4r2_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/imus_info__type_support.cpp.o\x1b[0m\n'}
+[2.204762] (-) TimerEvent: {}
+[2.223117] (mocap4r2_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/imus_info__type_support.cpp.o\x1b[0m\n'}
+[2.259912] (mocap4r2_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[2.302841] (mocap4r2_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/rigid_bodies__type_support.cpp.o\x1b[0m\n'}
+[2.304852] (-) TimerEvent: {}
+[2.353037] (mocap4r2_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/srv/create_rigid_body__type_support.cpp.o\x1b[0m\n'}
+[2.354432] (mocap4r2_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/marker__type_support.c.o\x1b[0m\n'}
+[2.393664] (mocap4r2_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.394597] (mocap4r2_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/marker__type_support_c.cpp.o\x1b[0m\n'}
+[2.398913] (mocap4r2_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/markers__type_support.c.o\x1b[0m\n'}
+[2.405014] (-) TimerEvent: {}
+[2.449955] (mocap4r2_msgs) StdoutLine: {'line': b'[ 47%] Built target mocap4r2_msgs__rosidl_typesupport_c\n'}
+[2.450223] (mocap4r2_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/imus_info__type_support.c.o\x1b[0m\n'}
+[2.462790] (mocap4r2_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/markers__type_support_c.cpp.o\x1b[0m\n'}
+[2.497810] (mocap4r2_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/rigid_body__type_support.c.o\x1b[0m\n'}
+[2.505130] (-) TimerEvent: {}
+[2.545261] (mocap4r2_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/rigid_bodies__type_support.cpp.o\x1b[0m\n'}
+[2.547738] (mocap4r2_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.c.o\x1b[0m\n'}
+[2.580511] (mocap4r2_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/srv/create_rigid_body__type_support.cpp.o\x1b[0m\n'}
+[2.599541] (mocap4r2_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.c.o\x1b[0m\n'}
+[2.605224] (-) TimerEvent: {}
+[2.651260] (mocap4r2_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libmocap4r2_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.678767] (mocap4r2_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/markers__type_support.cpp.o\x1b[0m\n'}
+[2.691096] (mocap4r2_msgs) StdoutLine: {'line': b'[ 59%] Built target mocap4r2_msgs__rosidl_typesupport_introspection_c\n'}
+[2.702202] (mocap4r2_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/imus_info__type_support_c.cpp.o\x1b[0m\n'}
+[2.705320] (-) TimerEvent: {}
+[2.747153] (mocap4r2_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/imus_info__type_support.cpp.o\x1b[0m\n'}
+[2.772776] (mocap4r2_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[2.805437] (-) TimerEvent: {}
+[2.824364] (mocap4r2_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[2.895201] (mocap4r2_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/rigid_bodies__type_support.cpp.o\x1b[0m\n'}
+[2.899175] (mocap4r2_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.cpp.o\x1b[0m\n'}
+[2.905552] (-) TimerEvent: {}
+[2.917196] (mocap4r2_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.968624] (mocap4r2_msgs) StdoutLine: {'line': b'[ 69%] Built target mocap4r2_msgs__rosidl_typesupport_cpp\n'}
+[2.978614] (mocap4r2_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/rigid_body__type_support_c.cpp.o\x1b[0m\n'}
+[3.007786] (-) TimerEvent: {}
+[3.108143] (-) TimerEvent: {}
+[3.131322] (mocap4r2_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/srv/detail/dds_fastrtps/create_rigid_body__type_support.cpp.o\x1b[0m\n'}
+[3.208262] (-) TimerEvent: {}
+[3.233575] (mocap4r2_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/rigid_bodies__type_support_c.cpp.o\x1b[0m\n'}
+[3.287668] (mocap4r2_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/srv/detail/create_rigid_body__type_support_c.cpp.o\x1b[0m\n'}
+[3.308366] (-) TimerEvent: {}
+[3.349781] (mocap4r2_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.cpp.o\x1b[0m\n'}
+[3.408484] (-) TimerEvent: {}
+[3.511937] (-) TimerEvent: {}
+[3.579368] (mocap4r2_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.612391] (-) TimerEvent: {}
+[3.630337] (mocap4r2_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.667087] (mocap4r2_msgs) StdoutLine: {'line': b'[ 79%] Built target mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.695786] (mocap4r2_msgs) StdoutLine: {'line': b'[ 79%] Built target mocap4r2_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.712393] (-) TimerEvent: {}
+[3.726092] (mocap4r2_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.781956] (mocap4r2_msgs) StdoutLine: {'line': b'[ 80%] Built target mocap4r2_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.793731] (mocap4r2_msgs) StdoutLine: {'line': b'[ 80%] Built target mocap4r2_msgs\n'}
+[3.805840] (mocap4r2_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.812497] (-) TimerEvent: {}
+[3.912802] (-) TimerEvent: {}
+[4.013123] (-) TimerEvent: {}
+[4.113429] (-) TimerEvent: {}
+[4.213754] (-) TimerEvent: {}
+[4.295129] (mocap4r2_msgs) StdoutLine: {'line': b'[ 81%] Built target mocap4r2_msgs__py\n'}
+[4.308832] (mocap4r2_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_markers_s.c.o\x1b[0m\n'}
+[4.309065] (mocap4r2_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_imus_info_s.c.o\x1b[0m\n'}
+[4.309185] (mocap4r2_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_marker_s.c.o\x1b[0m\n'}
+[4.309931] (mocap4r2_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_rigid_body_s.c.o\x1b[0m\n'}
+[4.310215] (mocap4r2_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_rigid_bodies_s.c.o\x1b[0m\n'}
+[4.310444] (mocap4r2_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/srv/_create_rigid_body_s.c.o\x1b[0m\n'}
+[4.313836] (-) TimerEvent: {}
+[4.414474] (-) TimerEvent: {}
+[4.441630] (mocap4r2_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/libmocap4r2_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.470367] (mocap4r2_msgs) StdoutLine: {'line': b'[ 91%] Built target mocap4r2_msgs__rosidl_generator_py\n'}
+[4.483943] (mocap4r2_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.484097] (mocap4r2_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.484149] (mocap4r2_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.514880] (-) TimerEvent: {}
+[4.596204] (mocap4r2_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.596342] (mocap4r2_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.596386] (mocap4r2_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.614778] (-) TimerEvent: {}
+[4.623475] (mocap4r2_msgs) StdoutLine: {'line': b'[100%] Built target mocap4r2_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.623642] (mocap4r2_msgs) StdoutLine: {'line': b'[100%] Built target mocap4r2_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.623695] (mocap4r2_msgs) StdoutLine: {'line': b'[100%] Built target mocap4r2_msgs__rosidl_typesupport_c__pyext\n'}
+[4.630955] (mocap4r2_msgs) CommandEnded: {'returncode': 0}
+[4.631381] (mocap4r2_msgs) JobProgress: {'identifier': 'mocap4r2_msgs', 'progress': 'install'}
+[4.636680] (mocap4r2_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mello/mocap4r2_ws/build/mocap4r2_msgs'], 'cwd': '/home/mello/mocap4r2_ws/build/mocap4r2_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'mello'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mello'), ('OLDPWD', '/home/mello/mocap4r2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2559'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mello/mocap4r2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mello'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mello'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mello-ThinkPad-T14-Gen-2i:@/tmp/.ICE-unix/1531,unix/mello-ThinkPad-T14-Gen-2i:/tmp/.ICE-unix/1531'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9796fa9d_5506_48f6_a237_fd09c0d3b279'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XJYJR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mello/mocap4r2_ws/build/mocap4r2_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble')]), 'shell': False}
+[4.641411] (mocap4r2_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.641816] (mocap4r2_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.641950] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/rosidl_interfaces/mocap4r2_msgs\n'}
+[4.648077] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__functions.h\n'}
+[4.653997] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__struct.h\n'}
+[4.660443] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__type_support.h\n'}
+[4.666900] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__functions.h\n'}
+[4.671986] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__struct.h\n'}
+[4.676884] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__type_support.h\n'}
+[4.681370] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__functions.h\n'}
+[4.686443] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__struct.h\n'}
+[4.691612] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__type_support.h\n'}
+[4.696547] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__functions.h\n'}
+[4.701549] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__struct.h\n'}
+[4.706819] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.h\n'}
+[4.712922] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__functions.h\n'}
+[4.714829] (-) TimerEvent: {}
+[4.717951] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__struct.h\n'}
+[4.723019] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__type_support.h\n'}
+[4.727889] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/imus_info.h\n'}
+[4.732730] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/marker.h\n'}
+[4.737843] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/markers.h\n'}
+[4.742959] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_bodies.h\n'}
+[4.748059] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_body.h\n'}
+[4.753268] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.758375] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/create_rigid_body.h\n'}
+[4.763165] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__functions.h\n'}
+[4.768257] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__struct.h\n'}
+[4.773128] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.h\n'}
+[4.778487] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/library_path.sh\n'}
+[4.783504] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/library_path.dsv\n'}
+[4.788855] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_fastrtps_c.h\n'}
+[4.793753] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_fastrtps_c.h\n'}
+[4.798626] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_fastrtps_c.h\n'}
+[4.803595] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_fastrtps_c.h\n'}
+[4.808626] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h\n'}
+[4.813656] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.814895] (-) TimerEvent: {}
+[4.818602] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_fastrtps_c.h\n'}
+[4.823494] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_introspection_c.h\n'}
+[4.828616] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_introspection_c.h\n'}
+[4.833575] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_introspection_c.h\n'}
+[4.838759] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_introspection_c.h\n'}
+[4.844053] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h\n'}
+[4.849451] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.854755] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_introspection_c.h\n'}
+[4.859928] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__builder.hpp\n'}
+[4.864842] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__struct.hpp\n'}
+[4.869916] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__traits.hpp\n'}
+[4.874589] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__type_support.hpp\n'}
+[4.879520] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__builder.hpp\n'}
+[4.884567] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__struct.hpp\n'}
+[4.889420] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__traits.hpp\n'}
+[4.894443] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__type_support.hpp\n'}
+[4.899197] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__builder.hpp\n'}
+[4.904215] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__struct.hpp\n'}
+[4.909516] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__traits.hpp\n'}
+[4.914219] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__type_support.hpp\n'}
+[4.914953] (-) TimerEvent: {}
+[4.919157] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__builder.hpp\n'}
+[4.923999] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__struct.hpp\n'}
+[4.929167] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__traits.hpp\n'}
+[4.934315] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.hpp\n'}
+[4.939306] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__builder.hpp\n'}
+[4.944566] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__struct.hpp\n'}
+[4.950164] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__traits.hpp\n'}
+[4.955296] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__type_support.hpp\n'}
+[4.960969] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/imus_info.hpp\n'}
+[4.966236] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/marker.hpp\n'}
+[4.971684] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/markers.hpp\n'}
+[4.976719] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_bodies.hpp\n'}
+[4.981808] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_body.hpp\n'}
+[4.987070] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.992193] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/create_rigid_body.hpp\n'}
+[4.997172] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__builder.hpp\n'}
+[5.002370] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__struct.hpp\n'}
+[5.007073] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__traits.hpp\n'}
+[5.011820] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.hpp\n'}
+[5.015027] (-) TimerEvent: {}
+[5.016969] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.021756] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.026458] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.031553] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.036573] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.041748] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.047084] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.053274] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.058601] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.063367] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.068036] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.072970] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.077997] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.082904] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/pythonpath.sh\n'}
+[5.087917] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/pythonpath.dsv\n'}
+[5.092986] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/PKG-INFO\n'}
+[5.098164] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.103578] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.108462] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/top_level.txt\n'}
+[5.113832] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/__init__.py\n'}
+[5.115122] (-) TimerEvent: {}
+[5.119116] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.124171] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.130857] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.138151] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/libmocap4r2_msgs__rosidl_generator_py.so\n'}
+[5.145798] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.153460] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.159937] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.166086] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/__init__.py\n'}
+[5.171723] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_imus_info.py\n'}
+[5.176940] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_imus_info_s.c\n'}
+[5.182357] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_marker.py\n'}
+[5.187453] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_marker_s.c\n'}
+[5.192679] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_markers.py\n'}
+[5.197782] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_markers_s.c\n'}
+[5.203458] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_bodies.py\n'}
+[5.208612] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_bodies_s.c\n'}
+[5.213630] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_body.py\n'}
+[5.215212] (-) TimerEvent: {}
+[5.218746] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_body_s.c\n'}
+[5.223771] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/__init__.py\n'}
+[5.229099] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/_create_rigid_body.py\n'}
+[5.234223] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/_create_rigid_body_s.c\n'}
+[5.239311] (mocap4r2_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.239398] (mocap4r2_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.239452] (mocap4r2_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.239543] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/rust_packages/mocap4r2_msgs\n'}
+[5.245291] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/Cargo.toml\n'}
+[5.250990] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/build.rs\n'}
+[5.256309] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/lib.rs\n'}
+[5.261278] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/msg.rs\n'}
+[5.266474] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/msg/rmw.rs\n'}
+[5.271425] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/srv.rs\n'}
+[5.276468] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/srv/rmw.rs\n'}
+[5.281558] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Marker.idl\n'}
+[5.286649] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Markers.idl\n'}
+[5.292686] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/ImusInfo.idl\n'}
+[5.297788] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBody.idl\n'}
+[5.302396] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBodies.idl\n'}
+[5.307484] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody.idl\n'}
+[5.312621] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Marker.msg\n'}
+[5.315306] (-) TimerEvent: {}
+[5.317664] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Markers.msg\n'}
+[5.322416] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/ImusInfo.msg\n'}
+[5.327383] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBody.msg\n'}
+[5.332392] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBodies.msg\n'}
+[5.337451] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody.srv\n'}
+[5.342848] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody_Request.msg\n'}
+[5.348365] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody_Response.msg\n'}
+[5.354395] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/mocap4r2_bridge_mapping_rule.yaml\n'}
+[5.359653] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/package_run_dependencies/mocap4r2_msgs\n'}
+[5.365022] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/parent_prefix_path/mocap4r2_msgs\n'}
+[5.370103] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/ament_prefix_path.sh\n'}
+[5.375193] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/ament_prefix_path.dsv\n'}
+[5.379939] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/path.sh\n'}
+[5.385042] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/path.dsv\n'}
+[5.389925] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.bash\n'}
+[5.395228] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.sh\n'}
+[5.400274] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.zsh\n'}
+[5.405432] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.dsv\n'}
+[5.410528] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.dsv\n'}
+[5.415414] (-) TimerEvent: {}
+[5.415851] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/packages/mocap4r2_msgs\n'}
+[5.420924] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.425883] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.431006] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.436208] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.441150] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.446780] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.452177] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.457195] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgsConfig.cmake\n'}
+[5.462371] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgsConfig-version.cmake\n'}
+[5.467337] (mocap4r2_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.xml\n'}
+[5.472378] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_c.so\n'}
+[5.472505] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_c.so" to ""\n'}
+[5.472560] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.472644] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.472710] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.472791] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.472870] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_c.so\n'}
+[5.473018] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.473107] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.473330] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.473420] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.473582] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.473671] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_cpp.so\n'}
+[5.473745] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.498060] (mocap4r2_msgs) StdoutLine: {'line': b"Listing '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs'...\n"}
+[5.498174] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/__init__.py'...\n"}
+[5.498208] (mocap4r2_msgs) StdoutLine: {'line': b"Listing '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg'...\n"}
+[5.498238] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/__init__.py'...\n"}
+[5.498265] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_imus_info.py'...\n"}
+[5.498293] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_marker.py'...\n"}
+[5.498321] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_markers.py'...\n"}
+[5.498348] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_bodies.py'...\n"}
+[5.498376] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_body.py'...\n"}
+[5.498403] (mocap4r2_msgs) StdoutLine: {'line': b"Listing '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv'...\n"}
+[5.498429] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/__init__.py'...\n"}
+[5.498457] (mocap4r2_msgs) StdoutLine: {'line': b"Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/_create_rigid_body.py'...\n"}
+[5.500714] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_py.so\n'}
+[5.500892] (mocap4r2_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_py.so" to ""\n'}
+[5.500998] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_cExport.cmake\n'}
+[5.501043] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.501104] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.501161] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.501236] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.501311] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.501390] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.501462] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.501540] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.501619] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.501708] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.501786] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.501857] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.501934] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.502004] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.502083] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.502162] (mocap4r2_msgs) StdoutLine: {'line': b'-- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.503862] (mocap4r2_msgs) CommandEnded: {'returncode': 0}
+[5.515646] (-) TimerEvent: {}
+[5.517018] (mocap4r2_msgs) JobEnded: {'identifier': 'mocap4r2_msgs', 'rc': 0}
+[5.517479] (mocap4r2_optitrack_driver) JobStarted: {'identifier': 'mocap4r2_optitrack_driver'}
+[5.521304] (mocap4r2_optitrack_driver) JobProgress: {'identifier': 'mocap4r2_optitrack_driver', 'progress': 'cmake'}
+[5.521599] (mocap4r2_optitrack_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/mello/mocap4r2_ws/src/mocap4ros2_optitrack/mocap4r2_optitrack_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver'], 'cwd': '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'mello'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mello'), ('OLDPWD', '/home/mello/mocap4r2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2559'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mello/mocap4r2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mello'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mello'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mello-ThinkPad-T14-Gen-2i:@/tmp/.ICE-unix/1531,unix/mello-ThinkPad-T14-Gen-2i:/tmp/.ICE-unix/1531'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9796fa9d_5506_48f6_a237_fd09c0d3b279'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XJYJR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble')]), 'shell': False}
+[5.558518] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.594387] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.598650] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.615843] (-) TimerEvent: {}
+[5.653508] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.658615] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.658713] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.659083] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.660845] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.709819] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.714661] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.714847] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.715112] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.715889] (-) TimerEvent: {}
+[5.716415] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.798801] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.815990] (-) TimerEvent: {}
+[5.836862] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.847634] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.866854] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.869148] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.873354] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.879613] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.887889] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.909908] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.911076] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.916148] (-) TimerEvent: {}
+[5.956613] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.967906] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.985279] (mocap4r2_optitrack_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.989012] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.016271] (-) TimerEvent: {}
+[6.034446] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.034612] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.082479] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.083501] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.113032] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[6.116349] (-) TimerEvent: {}
+[6.123539] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.135264] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[6.183945] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found mocap4r2_msgs: 0.2.0 (/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake)\n'}
+[6.194863] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found mocap4r2_control_msgs: 0.0.7 (/opt/ros/humble/share/mocap4r2_control_msgs/cmake)\n'}
+[6.205637] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found mocap4r2_control: 0.0.7 (/opt/ros/humble/share/mocap4r2_control/cmake)\n'}
+[6.216165] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.12.15 (/opt/ros/humble/share/ament_cmake_copyright/cmake)\n'}
+[6.216409] (-) TimerEvent: {}
+[6.216660] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.15 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[6.217528] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.15 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[6.218290] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.12.15 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)\n'}
+[6.218935] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.12.15 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)\n'}
+[6.219647] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.15 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[6.221300] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[6.262639] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.278316] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[6.282284] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver\n'}
+[6.289028] (mocap4r2_optitrack_driver) CommandEnded: {'returncode': 0}
+[6.289446] (mocap4r2_optitrack_driver) JobProgress: {'identifier': 'mocap4r2_optitrack_driver', 'progress': 'build'}
+[6.289633] (mocap4r2_optitrack_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver', '--', '-j8', '-l8'], 'cwd': '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'mello'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mello'), ('OLDPWD', '/home/mello/mocap4r2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2559'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mello/mocap4r2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mello'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mello'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mello-ThinkPad-T14-Gen-2i:@/tmp/.ICE-unix/1531,unix/mello-ThinkPad-T14-Gen-2i:/tmp/.ICE-unix/1531'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9796fa9d_5506_48f6_a237_fd09c0d3b279'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XJYJR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble')]), 'shell': False}
+[6.316535] (-) TimerEvent: {}
+[6.322848] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_optitrack_driver.dir/src/mocap4r2_optitrack_driver/mocap4r2_optitrack_driver.cpp.o\x1b[0m\n'}
+[6.416638] (-) TimerEvent: {}
+[6.517020] (-) TimerEvent: {}
+[6.617280] (-) TimerEvent: {}
+[6.717649] (-) TimerEvent: {}
+[6.818024] (-) TimerEvent: {}
+[6.918344] (-) TimerEvent: {}
+[7.018675] (-) TimerEvent: {}
+[7.119052] (-) TimerEvent: {}
+[7.219402] (-) TimerEvent: {}
+[7.319736] (-) TimerEvent: {}
+[7.420079] (-) TimerEvent: {}
+[7.520394] (-) TimerEvent: {}
+[7.620739] (-) TimerEvent: {}
+[7.721014] (-) TimerEvent: {}
+[7.821351] (-) TimerEvent: {}
+[7.921679] (-) TimerEvent: {}
+[8.022036] (-) TimerEvent: {}
+[8.122354] (-) TimerEvent: {}
+[8.222678] (-) TimerEvent: {}
+[8.322921] (-) TimerEvent: {}
+[8.423264] (-) TimerEvent: {}
+[8.523597] (-) TimerEvent: {}
+[8.623964] (-) TimerEvent: {}
+[8.724320] (-) TimerEvent: {}
+[8.824665] (-) TimerEvent: {}
+[8.924893] (-) TimerEvent: {}
+[9.025246] (-) TimerEvent: {}
+[9.125610] (-) TimerEvent: {}
+[9.225921] (-) TimerEvent: {}
+[9.326241] (-) TimerEvent: {}
+[9.426496] (-) TimerEvent: {}
+[9.526743] (-) TimerEvent: {}
+[9.605696] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libmocap4r2_optitrack_driver.a\x1b[0m\n'}
+[9.626836] (-) TimerEvent: {}
+[9.644746] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'[ 50%] Built target mocap4r2_optitrack_driver\n'}
+[9.659093] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/mocap4r2_optitrack_driver_main.dir/src/mocap4r2_optitrack_driver_main.cpp.o\x1b[0m\n'}
+[9.727031] (-) TimerEvent: {}
+[9.827286] (-) TimerEvent: {}
+[9.927567] (-) TimerEvent: {}
+[10.027784] (-) TimerEvent: {}
+[10.128081] (-) TimerEvent: {}
+[10.228431] (-) TimerEvent: {}
+[10.328765] (-) TimerEvent: {}
+[10.429107] (-) TimerEvent: {}
+[10.529438] (-) TimerEvent: {}
+[10.629703] (-) TimerEvent: {}
+[10.730022] (-) TimerEvent: {}
+[10.830380] (-) TimerEvent: {}
+[10.930625] (-) TimerEvent: {}
+[11.030954] (-) TimerEvent: {}
+[11.131295] (-) TimerEvent: {}
+[11.231627] (-) TimerEvent: {}
+[11.331878] (-) TimerEvent: {}
+[11.432199] (-) TimerEvent: {}
+[11.532519] (-) TimerEvent: {}
+[11.545678] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mocap4r2_optitrack_driver_main\x1b[0m\n'}
+[11.632709] (-) TimerEvent: {}
+[11.732941] (-) TimerEvent: {}
+[11.737271] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'[100%] Built target mocap4r2_optitrack_driver_main\n'}
+[11.746219] (mocap4r2_optitrack_driver) CommandEnded: {'returncode': 0}
+[11.746633] (mocap4r2_optitrack_driver) JobProgress: {'identifier': 'mocap4r2_optitrack_driver', 'progress': 'install'}
+[11.746790] (mocap4r2_optitrack_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver'], 'cwd': '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'mello'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mello'), ('OLDPWD', '/home/mello/mocap4r2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2559'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mello/mocap4r2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mello'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mello'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mello-ThinkPad-T14-Gen-2i:@/tmp/.ICE-unix/1531,unix/mello-ThinkPad-T14-Gen-2i:/tmp/.ICE-unix/1531'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9796fa9d_5506_48f6_a237_fd09c0d3b279'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XJYJR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble')]), 'shell': False}
+[11.751752] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.752048] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.752286] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/include//mocap4r2_optitrack_driver/mocap4r2_optitrack_driver.hpp\n'}
+[11.757711] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/launch/optitrack2.launch.py\n'}
+[11.764270] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/config/mocap4r2_optitrack_driver_params.yaml\n'}
+[11.770385] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib/mocap4r2_optitrack_driver/mocap4r2_optitrack_driver_main\n'}
+[11.777058] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib/libmocap4r2_optitrack_driver.a\n'}
+[11.782540] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/environment/library_path.sh\n'}
+[11.787792] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/environment/library_path.dsv\n'}
+[11.793023] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/ament_index/resource_index/package_run_dependencies/mocap4r2_optitrack_driver\n'}
+[11.798334] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/ament_index/resource_index/parent_prefix_path/mocap4r2_optitrack_driver\n'}
+[11.803595] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/environment/ament_prefix_path.sh\n'}
+[11.808970] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/environment/ament_prefix_path.dsv\n'}
+[11.813716] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/environment/path.sh\n'}
+[11.818949] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/environment/path.dsv\n'}
+[11.823901] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/local_setup.bash\n'}
+[11.829123] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/local_setup.sh\n'}
+[11.833029] (-) TimerEvent: {}
+[11.834299] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/local_setup.zsh\n'}
+[11.839757] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/local_setup.dsv\n'}
+[11.846721] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.dsv\n'}
+[11.851825] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/ament_index/resource_index/packages/mocap4r2_optitrack_driver\n'}
+[11.856872] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.861937] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.867430] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.872678] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/cmake/mocap4r2_optitrack_driverConfig.cmake\n'}
+[11.878033] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/cmake/mocap4r2_optitrack_driverConfig-version.cmake\n'}
+[11.883057] (mocap4r2_optitrack_driver) StdoutLine: {'line': b'-- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.xml\n'}
+[11.889454] (mocap4r2_optitrack_driver) CommandEnded: {'returncode': 0}
+[11.897025] (mocap4r2_optitrack_driver) JobEnded: {'identifier': 'mocap4r2_optitrack_driver', 'rc': 0}
+[11.897440] (-) EventReactorShutdown: {}

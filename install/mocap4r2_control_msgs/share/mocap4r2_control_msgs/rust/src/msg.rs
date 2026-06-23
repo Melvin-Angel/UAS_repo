@@ -1,0 +1,1 @@
+/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs/rosidl_generator_rs/mocap4r2_control_msgs/rust/src/msg.rs

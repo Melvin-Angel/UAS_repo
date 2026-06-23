@@ -1,0 +1,1 @@
+/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs/rosidl_generator_py/mocap4r2_control_msgs/msg/_mocap_info.py

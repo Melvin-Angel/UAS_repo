@@ -1,0 +1,20 @@
+[0.005s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2_msgs -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_msgs
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.125s] -- The CXX compiler identification is unknown
+[0.128s] -- Detecting C compiler ABI info
+[0.174s] -- Detecting C compiler ABI info - done
+[0.179s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.179s] -- Detecting C compile features
+[0.179s] -- Detecting C compile features - done
+[0.179s] [31mCMake Error at CMakeLists.txt:2 (project):
+[0.180s]   No CMAKE_CXX_COMPILER could be found.
+[0.180s] 
+[0.180s]   Tell CMake where to find the compiler by setting either the environment
+[0.180s]   variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+[0.180s]   to the compiler, or to the compiler name if it is in the PATH.
+[0.180s] 
+[0.180s] [0m
+[0.180s] -- Configuring incomplete, errors occurred!
+[0.181s] See also "/home/mello/mocap4r2_ws/build/mocap4r2_msgs/CMakeFiles/CMakeOutput.log".
+[0.181s] See also "/home/mello/mocap4r2_ws/build/mocap4r2_msgs/CMakeFiles/CMakeError.log".
+[0.185s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2_msgs -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_msgs

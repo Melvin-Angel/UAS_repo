@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-99d7a6dc1d6bbe740210.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "mocap4r2_robot_gt_msgs__py",
+					"jsonFile" : "directory-mocap4r2_robot_gt_msgs__py-d3b8392cd97861c1daf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs/mocap4r2_robot_gt_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "mocap4r2_robot_gt_msgs__rs",
+					"jsonFile" : "directory-mocap4r2_robot_gt_msgs__rs-36f395e87027d3ffd045.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs/mocap4r2_robot_gt_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "mocap4r2_robot_gt_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_mocap4r2_robot_gt_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_mocap4r2_robot_gt_msgs_egg-e51d21d71196a5a55ce5.json",
+					"name" : "ament_cmake_python_build_mocap4r2_robot_gt_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_mocap4r2_robot_gt_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_mocap4r2_robot_gt_msgs-5aa61dc5be0ba262528a.json",
+					"name" : "ament_cmake_python_symlink_mocap4r2_robot_gt_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs-9df7255fe59bdf2c8b2e.json",
+					"name" : "mocap4r2_robot_gt_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__cpp-88faec7a840e15436bcf.json",
+					"name" : "mocap4r2_robot_gt_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mocap4r2_robot_gt_msgs__py::@82d2eac7b955268b2719",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__py-34d9309009d56ab7ca49.json",
+					"name" : "mocap4r2_robot_gt_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_generator_c-acc6f7ea6dafa0a4fa45.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_generator_py-bfd1cf278680759ffb7c.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_c-ccda5890e162eb27a915.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_c__pyext-f113dfb44a1d2934e117.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_cpp-f98497a955cb708c9bda.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_c-108215e036534812913a.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_c__pyext-dcef75ab87545bdbdbf5.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_cpp-06cab42c8a07da0e4035.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_c-c7fee4113b908e6a23a9.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_c__pyext-13332ddcdfab87ddd807.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_cpp-63587c2b77b501164f7b.json",
+					"name" : "mocap4r2_robot_gt_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mocap4r2_robot_gt_msgs__rs::@09fffdaaeb9719d039fc",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs__rs-482822a5cdd546e4adfe.json",
+					"name" : "mocap4r2_robot_gt_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mocap4r2_robot_gt_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mocap4r2_robot_gt_msgs_uninstall-0f30f86595814785fb98.json",
+					"name" : "mocap4r2_robot_gt_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0374b98c198d497d276f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs",
+		"source" : "/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

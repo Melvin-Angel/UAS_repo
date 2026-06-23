@@ -1,0 +1,400 @@
+[0.005s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2_msgs -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_msgs
+[0.043s] -- The CXX compiler identification is GNU 11.4.0
+[0.048s] -- Detecting CXX compiler ABI info
+[0.100s] -- Detecting CXX compiler ABI info - done
+[0.105s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.105s] -- Detecting CXX compile features
+[0.105s] -- Detecting CXX compile features - done
+[0.107s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.187s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.236s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.237s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.240s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.259s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.277s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.284s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.291s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.482s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.615s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.792s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.802s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.802s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.815s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.815s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.815s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.815s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.824s] -- Found PythonExtra: .so  
+[0.914s] -- Configuring done
+[0.939s] -- Generating done
+[0.946s] -- Build files have been written to: /home/mello/mocap4r2_ws/build/mocap4r2_msgs
+[0.951s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2_msgs -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_msgs
+[0.951s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_msgs -- -j8 -l8
+[0.975s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.981s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[0.981s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.986s] [  4%] Built target ament_cmake_python_copy_mocap4r2_msgs
+[1.110s] running egg_info
+[1.110s] creating mocap4r2_msgs.egg-info
+[1.111s] writing mocap4r2_msgs.egg-info/PKG-INFO
+[1.111s] writing dependency_links to mocap4r2_msgs.egg-info/dependency_links.txt
+[1.111s] writing top-level names to mocap4r2_msgs.egg-info/top_level.txt
+[1.111s] writing manifest file 'mocap4r2_msgs.egg-info/SOURCES.txt'
+[1.112s] reading manifest file 'mocap4r2_msgs.egg-info/SOURCES.txt'
+[1.112s] writing manifest file 'mocap4r2_msgs.egg-info/SOURCES.txt'
+[1.129s] [  4%] Built target ament_cmake_python_build_mocap4r2_msgs_egg
+[1.194s] [  4%] Built target mocap4r2_msgs__rs
+[1.359s] [  5%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/markers__functions.c.o[0m
+[1.359s] [  8%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/marker__functions.c.o[0m
+[1.359s] [  9%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/imus_info__functions.c.o[0m
+[1.359s] [  9%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/rigid_body__functions.c.o[0m
+[1.360s] [  9%] Built target mocap4r2_msgs__cpp
+[1.360s] [ 11%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/msg/detail/rigid_bodies__functions.c.o[0m
+[1.360s] [ 12%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_c.dir/rosidl_generator_c/mocap4r2_msgs/srv/detail/create_rigid_body__functions.c.o[0m
+[1.367s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.367s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.407s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.425s] [ 18%] [32m[1mLinking C shared library libmocap4r2_msgs__rosidl_generator_c.so[0m
+[1.450s] [ 18%] Built target mocap4r2_msgs__rosidl_generator_c
+[1.456s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.459s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.460s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.711s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/imus_info__type_support.cpp.o[0m
+[1.712s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/marker__type_support.cpp.o[0m
+[1.712s] [ 26%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/markers__type_support.cpp.o[0m
+[1.830s] [ 27%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/marker__type_support.cpp.o[0m
+[1.881s] [ 29%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/marker__type_support_c.cpp.o[0m
+[1.896s] [ 30%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/marker__type_support.cpp.o[0m
+[1.904s] [ 31%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/marker__type_support.cpp.o[0m
+[1.946s] [ 33%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/markers__type_support.cpp.o[0m
+[1.973s] [ 34%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/imus_info__type_support.cpp.o[0m
+[2.000s] [ 36%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/rigid_body__type_support.cpp.o[0m
+[2.029s] [ 37%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/msg/rigid_bodies__type_support.cpp.o[0m
+[2.040s] [ 38%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/marker__type_support.c.o[0m
+[2.058s] [ 40%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap4r2_msgs/srv/create_rigid_body__type_support.cpp.o[0m
+[2.073s] [ 41%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/markers__type_support.c.o[0m
+[2.088s] [ 43%] [32m[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_c.so[0m
+[2.093s] [ 44%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/markers__type_support.cpp.o[0m
+[2.101s] [ 45%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/imus_info__type_support.c.o[0m
+[2.117s] [ 47%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o[0m
+[2.133s] [ 47%] Built target mocap4r2_msgs__rosidl_typesupport_c
+[2.140s] [ 48%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/rigid_body__type_support.c.o[0m
+[2.141s] [ 50%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/markers__type_support_c.cpp.o[0m
+[2.159s] [ 51%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/markers__type_support.cpp.o[0m
+[2.165s] [ 52%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/imus_info__type_support.cpp.o[0m
+[2.178s] [ 54%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.c.o[0m
+[2.218s] [ 55%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.c.o[0m
+[2.231s] [ 56%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/imus_info__type_support_c.cpp.o[0m
+[2.257s] [ 58%] [32m[1mLinking C shared library libmocap4r2_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.279s] [ 59%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/imus_info__type_support.cpp.o[0m
+[2.296s] [ 59%] Built target mocap4r2_msgs__rosidl_typesupport_introspection_c
+[2.304s] [ 61%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/rigid_body__type_support.cpp.o[0m
+[2.354s] [ 62%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/rigid_body__type_support_c.cpp.o[0m
+[2.431s] [ 63%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/rigid_body__type_support.cpp.o[0m
+[2.479s] [ 65%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/msg/detail/dds_fastrtps/rigid_bodies__type_support.cpp.o[0m
+[2.557s] [ 66%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.cpp.o[0m
+[2.580s] [ 68%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/msg/detail/rigid_bodies__type_support_c.cpp.o[0m
+[2.587s] [ 69%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/msg/rigid_bodies__type_support.cpp.o[0m
+[2.695s] [ 70%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap4r2_msgs/srv/detail/dds_fastrtps/create_rigid_body__type_support.cpp.o[0m
+[2.697s] [ 72%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap4r2_msgs/srv/create_rigid_body__type_support.cpp.o[0m
+[2.703s] [ 73%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.cpp.o[0m
+[2.734s] [ 75%] [32mBuilding CXX object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap4r2_msgs/srv/detail/create_rigid_body__type_support_c.cpp.o[0m
+[2.923s] [ 76%] [32m[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_cpp.so[0m
+[2.953s] [ 76%] Built target mocap4r2_msgs__rosidl_typesupport_cpp
+[3.046s] [ 77%] [32m[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.060s] [ 79%] [32m[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.070s] [ 80%] [32m[1mLinking CXX shared library libmocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.103s] [ 80%] Built target mocap4r2_msgs__rosidl_typesupport_introspection_cpp
+[3.115s] [ 80%] Built target mocap4r2_msgs__rosidl_typesupport_fastrtps_c
+[3.128s] [ 80%] Built target mocap4r2_msgs__rosidl_typesupport_fastrtps_cpp
+[3.140s] [ 80%] Built target mocap4r2_msgs
+[3.154s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.649s] [ 81%] Built target mocap4r2_msgs__py
+[3.663s] [ 83%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_marker_s.c.o[0m
+[3.663s] [ 84%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/srv/_create_rigid_body_s.c.o[0m
+[3.664s] [ 86%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_markers_s.c.o[0m
+[3.664s] [ 87%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_imus_info_s.c.o[0m
+[3.664s] [ 88%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_rigid_body_s.c.o[0m
+[3.664s] [ 90%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_generator_py.dir/rosidl_generator_py/mocap4r2_msgs/msg/_rigid_bodies_s.c.o[0m
+[3.774s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/libmocap4r2_msgs__rosidl_generator_py.so[0m
+[3.800s] [ 91%] Built target mocap4r2_msgs__rosidl_generator_py
+[3.812s] [ 95%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.812s] [ 95%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.812s] [ 95%] [32mBuilding C object CMakeFiles/mocap4r2_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.886s] [100%] [32m[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.886s] [100%] [32m[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.886s] [100%] [32m[1mLinking C shared library rosidl_generator_py/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.912s] [100%] Built target mocap4r2_msgs__rosidl_typesupport_c__pyext
+[3.912s] [100%] Built target mocap4r2_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.912s] [100%] Built target mocap4r2_msgs__rosidl_typesupport_introspection_c__pyext
+[3.919s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_msgs -- -j8 -l8
+[3.925s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_msgs
+[3.930s] -- Install configuration: ""
+[3.930s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/rosidl_interfaces/mocap4r2_msgs
+[3.930s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs
+[3.930s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv
+[3.930s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/create_rigid_body.h
+[3.930s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail
+[3.930s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__struct.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__functions.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__functions.c
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/markers.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_body.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__functions.c
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__functions.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__struct.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__functions.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__struct.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__functions.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__type_support.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__type_support.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__functions.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__functions.c
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__functions.c
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__functions.c
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__functions.c
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__functions.h
+[3.931s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__struct.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__type_support.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__type_support.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__struct.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__struct.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/marker.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/imus_info.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_bodies.h
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/library_path.sh
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/library_path.dsv
+[3.932s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_c.so
+[3.932s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_c.so" to ""
+[3.932s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs
+[3.932s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_fastrtps_c.h
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_fastrtps_c.h
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_fastrtps_c.h
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_fastrtps_c.h
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_fastrtps_c.h
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_c.so
+[3.933s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.c
+[3.933s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_introspection_c.h
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg
+[3.933s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__type_support.c
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_introspection_c.h
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__type_support.c
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_introspection_c.h
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__type_support.c
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.c
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_introspection_c.h
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__type_support.c
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_introspection_c.h
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_c.so
+[3.934s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_c.so" to ""
+[3.934s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_c.so
+[3.934s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_c.so" to ""
+[3.934s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs
+[3.934s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv
+[3.935s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__struct.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__traits.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__builder.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/create_rigid_body.hpp
+[3.935s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg
+[3.935s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__builder.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__struct.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__type_support.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__struct.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__traits.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__traits.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__type_support.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__struct.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__type_support.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__type_support.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__builder.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__traits.hpp
+[3.935s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__traits.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__struct.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__builder.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__traits.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__struct.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__builder.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__builder.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_bodies.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/marker.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/markers.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/imus_info.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rigid_body.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.936s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs
+[3.936s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv
+[3.936s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_fastrtps_cpp.hpp
+[3.936s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/dds_fastrtps
+[3.936s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg
+[3.937s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_fastrtps_cpp.hpp
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_fastrtps_cpp.hpp
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_fastrtps_cpp.hpp
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_fastrtps_cpp.hpp
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/dds_fastrtps
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.937s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.937s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs
+[3.937s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv
+[3.937s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__rosidl_typesupport_introspection_cpp.hpp
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/srv/detail/create_rigid_body__type_support.cpp
+[3.937s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg
+[3.937s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail
+[3.937s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__rosidl_typesupport_introspection_cpp.hpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/imus_info__type_support.cpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__rosidl_typesupport_introspection_cpp.hpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/markers__type_support.cpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__rosidl_typesupport_introspection_cpp.hpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__rosidl_typesupport_introspection_cpp.hpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_bodies__type_support.cpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/rigid_body__type_support.cpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/include/mocap4r2_msgs/mocap4r2_msgs/msg/detail/marker__type_support.cpp
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_cpp.so
+[3.938s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_cpp.so
+[3.938s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_typesupport_cpp.so" to ""
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/pythonpath.sh
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/pythonpath.dsv
+[3.938s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/top_level.txt
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/dependency_links.txt
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/PKG-INFO
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs-0.2.0-py3.10.egg-info/SOURCES.txt
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/_create_rigid_body_s.c
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/__init__.py
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/_create_rigid_body.py
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_c.c
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.939s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_bodies_s.c
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_markers.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_marker.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_imus_info.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_body.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_body_s.c
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_markers_s.c
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_bodies.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_imus_info_s.c
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/__init__.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_marker_s.c
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/libmocap4r2_msgs__rosidl_generator_py.so
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/_mocap4r2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/__init__.py
+[3.940s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.966s] Listing '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/__init__.py'...
+[3.966s] Listing '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/__init__.py'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_imus_info.py'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_marker.py'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_markers.py'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_bodies.py'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/msg/_rigid_body.py'...
+[3.966s] Listing '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/__init__.py'...
+[3.966s] Compiling '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/srv/_create_rigid_body.py'...
+[3.969s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.969s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.969s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.969s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.969s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.970s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/local/lib/python3.10/dist-packages/mocap4r2_msgs/mocap4r2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_py.so
+[3.970s] -- Set runtime path of "/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/libmocap4r2_msgs__rosidl_generator_py.so" to ""
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/rust_packages/mocap4r2_msgs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/msg.rs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/srv
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/srv/rmw.rs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/msg
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/msg/rmw.rs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/srv.rs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/src/lib.rs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/build.rs
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/rust/Cargo.toml
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Marker.idl
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Markers.idl
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/ImusInfo.idl
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBody.idl
+[3.970s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBodies.idl
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody.idl
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Marker.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/Markers.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/ImusInfo.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBody.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/msg/RigidBodies.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody.srv
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody_Request.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/srv/CreateRigidBody_Response.msg
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/mocap4r2_bridge_mapping_rule.yaml
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/package_run_dependencies/mocap4r2_msgs
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/parent_prefix_path/mocap4r2_msgs
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/ament_prefix_path.sh
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/ament_prefix_path.dsv
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/path.sh
+[3.971s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/environment/path.dsv
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.bash
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.sh
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.zsh
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/local_setup.dsv
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.dsv
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/ament_index/resource_index/packages/mocap4r2_msgs
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_cExport.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cExport.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.972s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_cppExport.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cppExport.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_pyExport.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/export_mocap4r2_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/rosidl_cmake-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.973s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgsConfig.cmake
+[3.974s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake/mocap4r2_msgsConfig-version.cmake
+[3.974s] -- Installing: /home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.xml
+[3.975s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_msgs

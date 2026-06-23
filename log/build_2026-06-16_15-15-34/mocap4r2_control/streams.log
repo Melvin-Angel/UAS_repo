@@ -1,0 +1,39 @@
+[0.039s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control -- -j8 -l8
+[0.187s] [ 28%] Built target gtest_main
+[0.187s] [ 28%] Built target gtest
+[0.187s] [ 57%] Built target mocap4r2_control
+[0.187s] [100%] Built target auxiliar_main
+[0.187s] [100%] Built target test_control
+[0.187s] [100%] Built target test_auxiliar
+[0.193s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control -- -j8 -l8
+[0.195s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control
+[0.200s] -- Install configuration: ""
+[0.201s] -- Execute custom install script
+[0.201s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/include//mocap4r2_control/AuxiliarNode.hpp
+[0.201s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/include//mocap4r2_control/ControlledLifecycleNode.hpp
+[0.201s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/include//mocap4r2_control/ControllerNode.hpp
+[0.201s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/config/config_example.yaml
+[0.201s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/launch/auxiliar.launch.py
+[0.201s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/lib/libmocap4r2_control.so
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/lib/mocap4r2_control/auxiliar_main
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/environment/library_path.sh
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/environment/library_path.dsv
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/ament_index/resource_index/package_run_dependencies/mocap4r2_control
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/ament_index/resource_index/parent_prefix_path/mocap4r2_control
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/environment/ament_prefix_path.sh
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/environment/ament_prefix_path.dsv
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/environment/path.sh
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/environment/path.dsv
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/local_setup.bash
+[0.202s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/local_setup.sh
+[0.203s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/local_setup.zsh
+[0.203s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/local_setup.dsv
+[0.203s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.dsv
+[0.213s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/ament_index/resource_index/packages/mocap4r2_control
+[0.213s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.213s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/cmake/ament_cmake_export_libraries-extras.cmake
+[0.213s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.213s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/cmake/mocap4r2_controlConfig.cmake
+[0.213s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/cmake/mocap4r2_controlConfig-version.cmake
+[0.214s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.xml
+[0.215s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control

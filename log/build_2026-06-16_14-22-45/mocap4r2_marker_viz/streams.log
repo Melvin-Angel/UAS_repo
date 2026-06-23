@@ -1,0 +1,82 @@
+[0.008s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.097s] -- The CXX compiler identification is GNU 11.4.0
+[0.104s] -- Detecting C compiler ABI info
+[0.155s] -- Detecting C compiler ABI info - done
+[0.166s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.167s] -- Detecting C compile features
+[0.167s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.243s] -- Detecting CXX compiler ABI info - done
+[0.253s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.254s] -- Detecting CXX compile features
+[0.254s] -- Detecting CXX compile features - done
+[0.257s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.371s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.421s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.443s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.484s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.489s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.500s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.515s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.536s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.588s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.590s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.669s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.691s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.715s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.720s] -- Looking for pthread.h
+[0.780s] -- Looking for pthread.h - found
+[0.781s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.861s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.863s] -- Found Threads: TRUE  
+[0.934s] -- Found mocap4r2_marker_viz_srvs: 0.0.7 (/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/cmake)
+[0.953s] -- Found mocap4r2_msgs: 0.2.0 (/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/cmake)
+[1.003s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.127s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.285s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.289s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz/include>
+[1.289s] -- Configured cppcheck exclude dirs and/or files: 
+[1.290s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.290s] -- Configured cpplint exclude dirs and/or files: 
+[1.291s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.296s] -- Added test 'lint_cmake' to check CMake code style
+[1.296s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.299s] -- Added test 'uncrustify' to check C / C++ code style
+[1.299s] -- Configured uncrustify additional arguments: 
+[1.299s] -- Added test 'xmllint' to check XML markup files
+[1.307s] -- Configuring done
+[1.345s] -- Generating done
+[1.359s] -- Build files have been written to: /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz
+[1.389s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz
+[1.394s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz -- -j8 -l8
+[1.508s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap4r2_marker_viz_NODE.dir/src/mocap4r2_marker_viz_node.cpp.o[0m
+[16.243s] [ 50%] [32m[1mLinking CXX static library libmocap4r2_marker_viz_NODE.a[0m
+[16.378s] [ 50%] Built target mocap4r2_marker_viz_NODE
+[16.393s] [ 75%] [32mBuilding CXX object CMakeFiles/mocap4r2_marker_viz.dir/src/mocap4r2_marker_viz_main.cpp.o[0m
+[19.743s] [100%] [32m[1mLinking CXX executable mocap4r2_marker_viz[0m
+[20.300s] [100%] Built target mocap4r2_marker_viz
+[20.308s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz -- -j8 -l8
+[20.309s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz
+[20.314s] -- Install configuration: ""
+[20.314s] -- Execute custom install script
+[20.315s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib/libmocap4r2_marker_viz_NODE.a
+[20.321s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib/mocap4r2_marker_viz/mocap4r2_marker_viz
+[20.328s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/launch/mocap4r2_marker_viz.launch.py
+[20.334s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/rviz/config.rviz
+[20.341s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/ament_index/resource_index/package_run_dependencies/mocap4r2_marker_viz
+[20.347s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/ament_index/resource_index/parent_prefix_path/mocap4r2_marker_viz
+[20.354s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/environment/ament_prefix_path.sh
+[20.360s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/environment/ament_prefix_path.dsv
+[20.367s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/environment/path.sh
+[20.373s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/environment/path.dsv
+[20.379s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/local_setup.bash
+[20.386s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/local_setup.sh
+[20.392s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/local_setup.zsh
+[20.399s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/local_setup.dsv
+[20.405s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.dsv
+[20.412s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/ament_index/resource_index/packages/mocap4r2_marker_viz
+[20.418s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/cmake/mocap4r2_marker_vizConfig.cmake
+[20.425s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/cmake/mocap4r2_marker_vizConfig-version.cmake
+[20.432s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.xml
+[20.440s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz

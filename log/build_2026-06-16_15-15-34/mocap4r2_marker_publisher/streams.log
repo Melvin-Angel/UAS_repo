@@ -1,0 +1,23 @@
+[0.150s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher -- -j8 -l8
+[0.202s] [100%] Built target mocap4r2_marker_publisher
+[0.217s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher' returned '0': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher -- -j8 -l8
+[0.219s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher
+[0.228s] -- Install configuration: ""
+[0.229s] -- Execute custom install script
+[0.229s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib/mocap4r2_marker_publisher/mocap4r2_marker_publisher
+[0.229s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/ament_index/resource_index/package_run_dependencies/mocap4r2_marker_publisher
+[0.229s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/ament_index/resource_index/parent_prefix_path/mocap4r2_marker_publisher
+[0.232s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/environment/ament_prefix_path.sh
+[0.232s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/environment/ament_prefix_path.dsv
+[0.232s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/environment/path.sh
+[0.232s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/environment/path.dsv
+[0.232s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/local_setup.bash
+[0.233s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/local_setup.sh
+[0.233s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/local_setup.zsh
+[0.234s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/local_setup.dsv
+[0.235s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.dsv
+[0.245s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/ament_index/resource_index/packages/mocap4r2_marker_publisher
+[0.246s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/cmake/mocap4r2_marker_publisherConfig.cmake
+[0.246s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/cmake/mocap4r2_marker_publisherConfig-version.cmake
+[0.246s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.xml
+[0.254s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher' returned '0': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher

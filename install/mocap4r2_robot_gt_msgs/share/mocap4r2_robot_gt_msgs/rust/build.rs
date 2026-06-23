@@ -1,0 +1,1 @@
+/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs/rosidl_generator_rs/mocap4r2_robot_gt_msgs/rust/build.rs

@@ -1,0 +1,1 @@
+/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs/rosidl_generator_c/mocap4r2_control_msgs/msg/detail/control__functions.h

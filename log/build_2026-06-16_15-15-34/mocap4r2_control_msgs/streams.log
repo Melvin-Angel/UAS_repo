@@ -1,0 +1,145 @@
+[0.012s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs -- -j8 -l8
+[0.075s] [  2%] Built target mocap4r2_control_msgs__rs
+[0.075s] [ 12%] Built target mocap4r2_control_msgs__rosidl_generator_c
+[0.078s] [ 15%] Built target mocap4r2_control_msgs__cpp
+[0.102s] [ 15%] Built target ament_cmake_python_symlink_mocap4r2_control_msgs
+[0.138s] [ 25%] Built target mocap4r2_control_msgs__rosidl_typesupport_introspection_c
+[0.148s] [ 35%] Built target mocap4r2_control_msgs__rosidl_typesupport_fastrtps_c
+[0.153s] [ 45%] Built target mocap4r2_control_msgs__rosidl_typesupport_introspection_cpp
+[0.154s] [ 55%] Built target mocap4r2_control_msgs__rosidl_typesupport_c
+[0.173s] [ 65%] Built target mocap4r2_control_msgs__rosidl_typesupport_cpp
+[0.173s] [ 75%] Built target mocap4r2_control_msgs__rosidl_typesupport_fastrtps_cpp
+[0.201s] [ 75%] Built target mocap4r2_control_msgs
+[0.219s] [ 77%] Built target mocap4r2_control_msgs__py
+[0.244s] [ 85%] Built target mocap4r2_control_msgs__rosidl_generator_py
+[0.275s] [ 90%] Built target mocap4r2_control_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.288s] [ 95%] Built target mocap4r2_control_msgs__rosidl_typesupport_c__pyext
+[0.301s] [100%] Built target mocap4r2_control_msgs__rosidl_typesupport_introspection_c__pyext
+[0.385s] running egg_info
+[0.386s] writing mocap4r2_control_msgs.egg-info/PKG-INFO
+[0.386s] writing dependency_links to mocap4r2_control_msgs.egg-info/dependency_links.txt
+[0.386s] writing top-level names to mocap4r2_control_msgs.egg-info/top_level.txt
+[0.388s] reading manifest file 'mocap4r2_control_msgs.egg-info/SOURCES.txt'
+[0.389s] writing manifest file 'mocap4r2_control_msgs.egg-info/SOURCES.txt'
+[0.412s] [100%] Built target ament_cmake_python_build_mocap4r2_control_msgs_egg
+[0.429s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs -- -j8 -l8
+[0.430s] Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs
+[0.436s] -- Install configuration: ""
+[0.437s] -- Execute custom install script
+[0.437s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/ament_index/resource_index/rosidl_interfaces/mocap4r2_control_msgs
+[0.437s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/control.h
+[0.437s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__functions.h
+[0.437s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__struct.h
+[0.437s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__type_support.h
+[0.438s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__functions.h
+[0.438s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__struct.h
+[0.438s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__type_support.h
+[0.438s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/mocap_info.h
+[0.438s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.438s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/library_path.sh
+[0.439s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/library_path.dsv
+[0.439s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h
+[0.439s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__rosidl_typesupport_fastrtps_c.h
+[0.439s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.439s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h
+[0.439s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__rosidl_typesupport_introspection_c.h
+[0.440s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/control.hpp
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__builder.hpp
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__struct.hpp
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__traits.hpp
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__type_support.hpp
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__builder.hpp
+[0.441s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__struct.hpp
+[0.442s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__traits.hpp
+[0.442s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__type_support.hpp
+[0.442s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/mocap_info.hpp
+[0.442s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.443s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp
+[0.443s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__rosidl_typesupport_fastrtps_cpp.hpp
+[0.443s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.445s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/include/mocap4r2_control_msgs/mocap4r2_control_msgs/msg/detail/mocap_info__rosidl_typesupport_introspection_cpp.hpp
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/pythonpath.sh
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/pythonpath.dsv
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs-0.0.7-py3.10.egg-info/PKG-INFO
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs-0.0.7-py3.10.egg-info/SOURCES.txt
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs-0.0.7-py3.10.egg-info/dependency_links.txt
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs-0.0.7-py3.10.egg-info/top_level.txt
+[0.446s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/__init__.py
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/_mocap4r2_control_msgs_s.ep.rosidl_typesupport_c.c
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/_mocap4r2_control_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/_mocap4r2_control_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/libmocap4r2_control_msgs__rosidl_generator_py.so
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/mocap4r2_control_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/mocap4r2_control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/mocap4r2_control_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/msg/__init__.py
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/msg/_control.py
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/msg/_control_s.c
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/msg/_mocap_info.py
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/msg/_mocap_info_s.c
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/mocap4r2_control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.447s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/mocap4r2_control_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.448s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/mocap4r2_control_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.448s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/ament_index/resource_index/rust_packages/mocap4r2_control_msgs
+[0.448s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/rust/Cargo.toml
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/rust/build.rs
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/rust/src/lib.rs
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/rust/src/msg.rs
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/rust/src/msg/rmw.rs
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/msg/Control.idl
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/msg/MocapInfo.idl
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/msg/Control.msg
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/msg/MocapInfo.msg
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/mocap4r2_control_bridge_mapping_rule.yaml
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/ament_index/resource_index/package_run_dependencies/mocap4r2_control_msgs
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/ament_index/resource_index/parent_prefix_path/mocap4r2_control_msgs
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/ament_prefix_path.sh
+[0.449s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/ament_prefix_path.dsv
+[0.450s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/path.sh
+[0.450s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/environment/path.dsv
+[0.450s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/local_setup.bash
+[0.450s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/local_setup.sh
+[0.450s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/local_setup.zsh
+[0.450s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/local_setup.dsv
+[0.450s] -- Symlinking: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.dsv
+[0.452s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/ament_index/resource_index/packages/mocap4r2_control_msgs
+[0.452s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/rosidl_cmake-extras.cmake
+[0.452s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.452s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.453s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.453s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.453s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.453s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.454s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgsConfig.cmake
+[0.454s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgsConfig-version.cmake
+[0.454s] -- Up-to-date symlink: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.xml
+[0.454s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_generator_c.so
+[0.455s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_typesupport_fastrtps_c.so
+[0.455s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_typesupport_introspection_c.so
+[0.455s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_typesupport_c.so
+[0.455s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.455s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_typesupport_introspection_cpp.so
+[0.456s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_typesupport_cpp.so
+[0.483s] Listing '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs'...
+[0.483s] Listing '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages/mocap4r2_control_msgs/msg'...
+[0.487s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/libmocap4r2_control_msgs__rosidl_generator_py.so
+[0.487s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_generator_cExport.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_cExport.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_generator_cppExport.cmake
+[0.488s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_cppExport.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/mocap4r2_control_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_generator_pyExport.cmake
+[0.489s] -- Up-to-date: /home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/cmake/export_mocap4r2_control_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.490s] Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs

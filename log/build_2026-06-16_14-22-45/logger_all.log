@@ -1,0 +1,903 @@
+[0.058s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.058s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d4286939c30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d4286a33130>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d4286a33130>>)
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.133s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mello/mocap4r2_ws'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_control/mocap4r2_control' with type 'ros.ament_cmake' and name 'mocap4r2_control'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs' with type 'ros.ament_cmake' and name 'mocap4r2_control_msgs'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control' with type 'ros.ament_cmake' and name 'rqt_mocap4r2_control'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_dummy_driver) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_dummy_driver' with type 'ros.ament_cmake' and name 'mocap4r2_dummy_driver'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extensions ['cmake', 'python']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'cmake'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'python'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extensions ['python_setup_py']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher' with type 'ros.ament_cmake' and name 'mocap4r2_marker_publisher'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz' with type 'ros.ament_cmake' and name 'mocap4r2_marker_viz'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs' with type 'ros.ament_cmake' and name 'mocap4r2_marker_viz_srvs'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt' with type 'ros.ament_cmake' and name 'mocap4r2_robot_gt'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs' with type 'ros.ament_cmake' and name 'mocap4r2_robot_gt_msgs'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2/mocap4r2cli) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2/mocap4r2cli' with type 'ros.ament_python' and name 'mocap4r2cli'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4r2_msgs) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4r2_msgs' with type 'ros.ament_cmake' and name 'mocap4r2_msgs'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/mocap4ros2_optitrack/mocap4r2_optitrack_driver) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mocap4ros2_optitrack/mocap4r2_optitrack_driver' with type 'ros.ament_cmake' and name 'mocap4r2_optitrack_driver'
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/mello/mocap4r2_ws/install
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 200 installed packages in /opt/ros/humble
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'cmake_target' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.191s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_control_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'cmake_target' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz_srvs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.191s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_marker_viz_srvs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs', 'symlink_install': True, 'test_result_base': None}
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'cmake_target' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.191s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_msgs', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'cmake_target' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.192s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_robot_gt_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'cmake_target' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.192s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_control', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control', 'symlink_install': True, 'test_result_base': None}
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'cmake_target' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.192s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_marker_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher', 'symlink_install': True, 'test_result_base': None}
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'cmake_target' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'cmake_clean_first' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'cmake_force_configure' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'ament_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_marker_viz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.192s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_marker_viz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_robot_gt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_robot_gt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2cli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2cli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2cli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2cli', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2cli', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_dummy_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_dummy_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_dummy_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_dummy_driver', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_dummy_driver', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'mocap4r2_optitrack_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'mocap4r2_optitrack_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4ros2_optitrack/mocap4r2_optitrack_driver', 'symlink_install': True, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'rqt_mocap4r2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'rqt_mocap4r2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mello/mocap4r2_ws/build/rqt_mocap4r2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control', 'merge_install': False, 'path': '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control', 'symlink_install': True, 'test_result_base': None}
+[0.194s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.195s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.195s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs' with build type 'ament_cmake'
+[0.195s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs'
+[0.196s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.198s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2_msgs' with build type 'ament_cmake'
+[0.198s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2_msgs'
+[0.198s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.198s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs' with build type 'ament_cmake'
+[0.200s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs'
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.202s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs' with build type 'ament_cmake'
+[0.202s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs'
+[0.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.202s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs
+[0.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_msgs -- -j8 -l8
+[0.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs
+[0.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs
+[0.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_msgs -- -j8 -l8
+[0.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_msgs
+[0.586s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_msgs)
+[0.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_msgs
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs' for CMake module files
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs' for CMake config files
+[0.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_msgs', 'cmake_prefix_path')
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/cmake_prefix_path.ps1'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/cmake_prefix_path.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/cmake_prefix_path.sh'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib'
+[0.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_msgs', 'ld_library_path_lib')
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/ld_library_path_lib.ps1'
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/ld_library_path_lib.dsv'
+[0.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/ld_library_path_lib.sh'
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/bin'
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/pkgconfig/mocap4r2_msgs.pc'
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/python3.10/site-packages'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/bin'
+[0.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.ps1'
+[0.598s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.sh'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.bash'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.zsh'
+[0.601s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/colcon-core/packages/mocap4r2_msgs)
+[0.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_msgs)
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs' for CMake module files
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs' for CMake config files
+[0.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_msgs', 'cmake_prefix_path')
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/cmake_prefix_path.ps1'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/cmake_prefix_path.dsv'
+[0.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/cmake_prefix_path.sh'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib'
+[0.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_msgs', 'ld_library_path_lib')
+[0.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/ld_library_path_lib.ps1'
+[0.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/ld_library_path_lib.dsv'
+[0.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/hook/ld_library_path_lib.sh'
+[0.623s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/bin'
+[0.623s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/pkgconfig/mocap4r2_msgs.pc'
+[0.623s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib/python3.10/site-packages'
+[0.624s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/bin'
+[0.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.ps1'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.dsv'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.sh'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.bash'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/mocap4r2_msgs/package.zsh'
+[0.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_msgs/share/colcon-core/packages/mocap4r2_msgs)
+[0.626s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher' with build type 'ament_cmake'
+[0.626s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher' returned '0': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_publisher -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher
+[1.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher -- -j8 -l8
+[1.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz_srvs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs
+[1.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs -- -j8 -l8
+[1.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs
+[1.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs -- -j8 -l8
+[1.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs
+[1.677s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs -- -j8 -l8
+[5.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs -- -j8 -l8
+[5.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs
+[6.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs -- -j8 -l8
+[6.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs
+[6.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs -- -j8 -l8
+[6.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs
+[6.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_robot_gt_msgs)
+[6.550s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs' for CMake module files
+[6.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt_msgs
+[6.550s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs' for CMake config files
+[6.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt_msgs', 'cmake_prefix_path')
+[6.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/cmake_prefix_path.ps1'
+[6.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/cmake_prefix_path.dsv'
+[6.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/cmake_prefix_path.sh'
+[6.553s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib'
+[6.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt_msgs', 'ld_library_path_lib')
+[6.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/ld_library_path_lib.ps1'
+[6.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/ld_library_path_lib.dsv'
+[6.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/ld_library_path_lib.sh'
+[6.554s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/bin'
+[6.554s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib/pkgconfig/mocap4r2_robot_gt_msgs.pc'
+[6.555s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib/python3.10/site-packages'
+[6.555s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/bin'
+[6.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.ps1'
+[6.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.dsv'
+[6.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.sh'
+[6.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.bash'
+[6.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.zsh'
+[6.558s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/colcon-core/packages/mocap4r2_robot_gt_msgs)
+[6.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_robot_gt_msgs)
+[6.559s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs' for CMake module files
+[6.559s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs' for CMake config files
+[6.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt_msgs', 'cmake_prefix_path')
+[6.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/cmake_prefix_path.ps1'
+[6.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/cmake_prefix_path.dsv'
+[6.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/cmake_prefix_path.sh'
+[6.562s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib'
+[6.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt_msgs', 'ld_library_path_lib')
+[6.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/ld_library_path_lib.ps1'
+[6.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/ld_library_path_lib.dsv'
+[6.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/hook/ld_library_path_lib.sh'
+[6.562s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/bin'
+[6.562s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib/pkgconfig/mocap4r2_robot_gt_msgs.pc'
+[6.563s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib/python3.10/site-packages'
+[6.563s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/bin'
+[6.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.ps1'
+[6.564s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.dsv'
+[6.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.sh'
+[6.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.bash'
+[6.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/mocap4r2_robot_gt_msgs/package.zsh'
+[6.565s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/share/colcon-core/packages/mocap4r2_robot_gt_msgs)
+[6.565s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt' with build type 'ament_cmake'
+[6.565s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt'
+[6.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.565s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt
+[6.850s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_control_msgs)
+[6.850s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs' for CMake module files
+[6.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control_msgs
+[6.852s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs' for CMake config files
+[6.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control_msgs', 'cmake_prefix_path')
+[6.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/cmake_prefix_path.ps1'
+[6.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/cmake_prefix_path.dsv'
+[6.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/cmake_prefix_path.sh'
+[6.855s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib'
+[6.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control_msgs', 'ld_library_path_lib')
+[6.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/ld_library_path_lib.ps1'
+[6.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/ld_library_path_lib.dsv'
+[6.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/ld_library_path_lib.sh'
+[6.856s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/bin'
+[6.857s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/pkgconfig/mocap4r2_control_msgs.pc'
+[6.857s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/python3.10/site-packages'
+[6.857s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/bin'
+[6.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.ps1'
+[6.858s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.dsv'
+[6.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.sh'
+[6.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.bash'
+[6.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.zsh'
+[6.860s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/colcon-core/packages/mocap4r2_control_msgs)
+[6.861s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_control_msgs)
+[6.861s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs' for CMake module files
+[6.862s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs' for CMake config files
+[6.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control_msgs', 'cmake_prefix_path')
+[6.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/cmake_prefix_path.ps1'
+[6.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/cmake_prefix_path.dsv'
+[6.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/cmake_prefix_path.sh'
+[6.864s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib'
+[6.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control_msgs', 'ld_library_path_lib')
+[6.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/ld_library_path_lib.ps1'
+[6.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/ld_library_path_lib.dsv'
+[6.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/hook/ld_library_path_lib.sh'
+[6.865s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/bin'
+[6.865s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/pkgconfig/mocap4r2_control_msgs.pc'
+[6.866s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib/python3.10/site-packages'
+[6.866s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/bin'
+[6.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.ps1'
+[6.867s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.dsv'
+[6.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.sh'
+[6.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.bash'
+[6.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/mocap4r2_control_msgs/package.zsh'
+[6.869s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/share/colcon-core/packages/mocap4r2_control_msgs)
+[6.869s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control' with build type 'ament_cmake'
+[6.870s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control'
+[6.870s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.870s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.873s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2cli' with build type 'ament_python'
+[6.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2cli', 'ament_prefix_path')
+[6.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/hook/ament_prefix_path.ps1'
+[6.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/hook/ament_prefix_path.dsv'
+[6.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/hook/ament_prefix_path.sh'
+[6.876s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.876s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_control
+[7.086s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2cli'
+[7.086s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.086s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_marker_viz_srvs)
+[7.090s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs' for CMake module files
+[7.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz_srvs
+[7.092s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs' for CMake config files
+[7.092s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_viz_srvs', 'cmake_prefix_path')
+[7.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/cmake_prefix_path.ps1'
+[7.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/cmake_prefix_path.dsv'
+[7.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/cmake_prefix_path.sh'
+[7.094s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib'
+[7.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_viz_srvs', 'ld_library_path_lib')
+[7.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/ld_library_path_lib.ps1'
+[7.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/ld_library_path_lib.dsv'
+[7.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/ld_library_path_lib.sh'
+[7.095s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/bin'
+[7.095s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib/pkgconfig/mocap4r2_marker_viz_srvs.pc'
+[7.096s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib/python3.10/site-packages'
+[7.096s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/bin'
+[7.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.ps1'
+[7.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.dsv'
+[7.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.sh'
+[7.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.bash'
+[7.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.zsh'
+[7.098s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/colcon-core/packages/mocap4r2_marker_viz_srvs)
+[7.098s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_marker_viz_srvs)
+[7.099s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs' for CMake module files
+[7.099s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs' for CMake config files
+[7.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_viz_srvs', 'cmake_prefix_path')
+[7.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/cmake_prefix_path.ps1'
+[7.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/cmake_prefix_path.dsv'
+[7.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/cmake_prefix_path.sh'
+[7.101s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib'
+[7.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_viz_srvs', 'ld_library_path_lib')
+[7.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/ld_library_path_lib.ps1'
+[7.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/ld_library_path_lib.dsv'
+[7.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/hook/ld_library_path_lib.sh'
+[7.101s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/bin'
+[7.102s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib/pkgconfig/mocap4r2_marker_viz_srvs.pc'
+[7.102s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib/python3.10/site-packages'
+[7.102s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/bin'
+[7.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.ps1'
+[7.103s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.dsv'
+[7.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.sh'
+[7.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.bash'
+[7.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/mocap4r2_marker_viz_srvs/package.zsh'
+[7.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/share/colcon-core/packages/mocap4r2_marker_viz_srvs)
+[7.104s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz' with build type 'ament_cmake'
+[7.105s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz'
+[7.105s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.105s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz
+[7.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2cli': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/build/mocap4r2cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mello/mocap4r2_ws/install/mocap4r2cli/lib/python3.10/site-packages:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mello/mocap4r2_ws/build/mocap4r2cli/build --no-deps symlink_data
+[7.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_robot_gt/mocap4r2_robot_gt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt
+[7.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt -- -j8 -l8
+[7.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2cli', 'pythonpath_develop')
+[7.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/build/mocap4r2cli/share/mocap4r2cli/hook/pythonpath_develop.ps1'
+[7.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2cli' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/build/mocap4r2cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mello/mocap4r2_ws/install/mocap4r2cli/lib/python3.10/site-packages:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mello/mocap4r2_ws/build/mocap4r2cli/build --no-deps symlink_data
+[7.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/build/mocap4r2cli/share/mocap4r2cli/hook/pythonpath_develop.dsv'
+[7.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/build/mocap4r2cli/share/mocap4r2cli/hook/pythonpath_develop.sh'
+[7.747s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli' for CMake module files
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli' for CMake config files
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli/lib'
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli/bin'
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli/lib/pkgconfig/mocap4r2cli.pc'
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli/lib/python3.10/site-packages'
+[7.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2cli', 'pythonpath')
+[7.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/hook/pythonpath.ps1'
+[7.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/hook/pythonpath.dsv'
+[7.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/hook/pythonpath.sh'
+[7.750s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2cli/bin'
+[7.750s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2cli)
+[7.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/package.ps1'
+[7.752s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/package.dsv'
+[7.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/package.sh'
+[7.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/package.bash'
+[7.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2cli/share/mocap4r2cli/package.zsh'
+[7.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2cli/share/colcon-core/packages/mocap4r2cli)
+[7.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/mocap4r2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_control
+[7.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control -- -j8 -l8
+[8.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_marker_viz/mocap4r2_marker_viz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz
+[8.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz -- -j8 -l8
+[8.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher' returned '0': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher -- -j8 -l8
+[8.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher
+[8.951s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_marker_publisher)
+[8.952s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher' for CMake module files
+[8.953s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher' for CMake config files
+[8.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_publisher', 'cmake_prefix_path')
+[8.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/hook/cmake_prefix_path.ps1'
+[8.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/hook/cmake_prefix_path.dsv'
+[8.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/hook/cmake_prefix_path.sh'
+[8.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher' returned '0': CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_publisher
+[8.960s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib'
+[8.961s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/bin'
+[8.961s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib/pkgconfig/mocap4r2_marker_publisher.pc'
+[8.961s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib/python3.10/site-packages'
+[8.961s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/bin'
+[8.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.ps1'
+[8.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.dsv'
+[8.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.sh'
+[8.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.bash'
+[8.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.zsh'
+[8.971s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/colcon-core/packages/mocap4r2_marker_publisher)
+[8.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_marker_publisher)
+[8.976s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher' for CMake module files
+[8.976s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher' for CMake config files
+[8.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_publisher', 'cmake_prefix_path')
+[8.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/hook/cmake_prefix_path.ps1'
+[8.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/hook/cmake_prefix_path.dsv'
+[8.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/hook/cmake_prefix_path.sh'
+[8.983s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib'
+[8.983s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/bin'
+[8.983s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib/pkgconfig/mocap4r2_marker_publisher.pc'
+[8.983s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/lib/python3.10/site-packages'
+[8.984s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/bin'
+[8.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.ps1'
+[8.988s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.dsv'
+[8.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.sh'
+[8.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.bash'
+[8.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/mocap4r2_marker_publisher/package.zsh'
+[8.994s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_marker_publisher/share/colcon-core/packages/mocap4r2_marker_publisher)
+[23.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt -- -j8 -l8
+[23.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt
+[23.552s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_robot_gt)
+[23.552s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt' for CMake module files
+[23.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_robot_gt' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_robot_gt
+[23.554s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt' for CMake config files
+[23.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt', 'cmake_prefix_path')
+[23.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/cmake_prefix_path.ps1'
+[23.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/cmake_prefix_path.dsv'
+[23.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/cmake_prefix_path.sh'
+[23.556s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/lib'
+[23.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt', 'ld_library_path_lib')
+[23.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/ld_library_path_lib.ps1'
+[23.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/ld_library_path_lib.dsv'
+[23.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/ld_library_path_lib.sh'
+[23.557s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/bin'
+[23.557s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/lib/pkgconfig/mocap4r2_robot_gt.pc'
+[23.557s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/lib/python3.10/site-packages'
+[23.558s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/bin'
+[23.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.ps1'
+[23.559s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.dsv'
+[23.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.sh'
+[23.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.bash'
+[23.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.zsh'
+[23.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/colcon-core/packages/mocap4r2_robot_gt)
+[23.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_robot_gt)
+[23.561s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt' for CMake module files
+[23.562s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt' for CMake config files
+[23.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt', 'cmake_prefix_path')
+[23.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/cmake_prefix_path.ps1'
+[23.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/cmake_prefix_path.dsv'
+[23.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/cmake_prefix_path.sh'
+[23.564s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/lib'
+[23.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_robot_gt', 'ld_library_path_lib')
+[23.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/ld_library_path_lib.ps1'
+[23.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/ld_library_path_lib.dsv'
+[23.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/hook/ld_library_path_lib.sh'
+[23.565s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/bin'
+[23.565s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/lib/pkgconfig/mocap4r2_robot_gt.pc'
+[23.565s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/lib/python3.10/site-packages'
+[23.565s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/bin'
+[23.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.ps1'
+[23.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.dsv'
+[23.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.sh'
+[23.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.bash'
+[23.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/mocap4r2_robot_gt/package.zsh'
+[23.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_robot_gt/share/colcon-core/packages/mocap4r2_robot_gt)
+[27.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz -- -j8 -l8
+[27.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz
+[27.545s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_marker_viz)
+[27.545s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz' for CMake module files
+[27.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_marker_viz' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz_srvs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_marker_viz
+[27.546s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz' for CMake config files
+[27.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_viz', 'cmake_prefix_path')
+[27.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/hook/cmake_prefix_path.ps1'
+[27.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/hook/cmake_prefix_path.dsv'
+[27.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/hook/cmake_prefix_path.sh'
+[27.547s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib'
+[27.547s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/bin'
+[27.547s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib/pkgconfig/mocap4r2_marker_viz.pc'
+[27.547s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib/python3.10/site-packages'
+[27.548s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/bin'
+[27.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.ps1'
+[27.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.dsv'
+[27.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.sh'
+[27.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.bash'
+[27.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.zsh'
+[27.549s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/colcon-core/packages/mocap4r2_marker_viz)
+[27.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_marker_viz)
+[27.550s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz' for CMake module files
+[27.550s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz' for CMake config files
+[27.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_marker_viz', 'cmake_prefix_path')
+[27.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/hook/cmake_prefix_path.ps1'
+[27.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/hook/cmake_prefix_path.dsv'
+[27.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/hook/cmake_prefix_path.sh'
+[27.551s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib'
+[27.551s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/bin'
+[27.551s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib/pkgconfig/mocap4r2_marker_viz.pc'
+[27.551s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/lib/python3.10/site-packages'
+[27.552s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/bin'
+[27.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.ps1'
+[27.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.dsv'
+[27.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.sh'
+[27.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.bash'
+[27.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/mocap4r2_marker_viz/package.zsh'
+[27.553s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_marker_viz/share/colcon-core/packages/mocap4r2_marker_viz)
+[27.770s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_control -- -j8 -l8
+[27.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_control': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control
+[27.934s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_control)
+[27.934s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control' for CMake module files
+[27.935s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_control' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_control
+[27.935s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control' for CMake config files
+[27.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control', 'cmake_prefix_path')
+[27.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/cmake_prefix_path.ps1'
+[27.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/cmake_prefix_path.dsv'
+[27.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/cmake_prefix_path.sh'
+[27.936s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/lib'
+[27.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control', 'ld_library_path_lib')
+[27.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/ld_library_path_lib.ps1'
+[27.936s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/ld_library_path_lib.dsv'
+[27.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/ld_library_path_lib.sh'
+[27.937s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/bin'
+[27.937s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/lib/pkgconfig/mocap4r2_control.pc'
+[27.937s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/lib/python3.10/site-packages'
+[27.937s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/bin'
+[27.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.ps1'
+[27.938s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.dsv'
+[27.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.sh'
+[27.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.bash'
+[27.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.zsh'
+[27.939s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_control/share/colcon-core/packages/mocap4r2_control)
+[27.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_control)
+[27.939s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control' for CMake module files
+[27.940s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control' for CMake config files
+[27.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control', 'cmake_prefix_path')
+[27.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/cmake_prefix_path.ps1'
+[27.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/cmake_prefix_path.dsv'
+[27.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/cmake_prefix_path.sh'
+[27.941s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/lib'
+[27.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_control', 'ld_library_path_lib')
+[27.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/ld_library_path_lib.ps1'
+[27.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/ld_library_path_lib.dsv'
+[27.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/hook/ld_library_path_lib.sh'
+[27.941s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/bin'
+[27.942s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/lib/pkgconfig/mocap4r2_control.pc'
+[27.942s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/lib/python3.10/site-packages'
+[27.942s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_control/bin'
+[27.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.ps1'
+[27.942s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.dsv'
+[27.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.sh'
+[27.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.bash'
+[27.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_control/share/mocap4r2_control/package.zsh'
+[27.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_control/share/colcon-core/packages/mocap4r2_control)
+[27.944s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_dummy_driver' with build type 'ament_cmake'
+[27.944s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_dummy_driver'
+[27.944s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.944s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.947s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4ros2_optitrack/mocap4r2_optitrack_driver' with build type 'ament_cmake'
+[27.947s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4ros2_optitrack/mocap4r2_optitrack_driver'
+[27.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.947s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.949s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control' with build type 'ament_cmake'
+[27.949s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control'
+[27.949s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.949s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_dummy_driver': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_dummy_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/mocap4r2_dummy_driver
+[27.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver -- -j8 -l8
+[27.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/rqt_mocap4r2_control': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control
+[28.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver -- -j8 -l8
+[28.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver
+[28.042s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_optitrack_driver)
+[28.042s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver' for CMake module files
+[28.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver' returned '0': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mello/mocap4r2_ws/build/mocap4r2_optitrack_driver
+[28.043s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver' for CMake config files
+[28.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_optitrack_driver', 'cmake_prefix_path')
+[28.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/hook/cmake_prefix_path.ps1'
+[28.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/hook/cmake_prefix_path.dsv'
+[28.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/hook/cmake_prefix_path.sh'
+[28.045s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib'
+[28.045s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/bin'
+[28.045s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib/pkgconfig/mocap4r2_optitrack_driver.pc'
+[28.045s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib/python3.10/site-packages'
+[28.045s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/bin'
+[28.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.ps1'
+[28.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.dsv'
+[28.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.sh'
+[28.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.bash'
+[28.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.zsh'
+[28.047s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/colcon-core/packages/mocap4r2_optitrack_driver)
+[28.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mocap4r2_optitrack_driver)
+[28.047s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver' for CMake module files
+[28.048s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver' for CMake config files
+[28.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('mocap4r2_optitrack_driver', 'cmake_prefix_path')
+[28.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/hook/cmake_prefix_path.ps1'
+[28.048s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/hook/cmake_prefix_path.dsv'
+[28.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/hook/cmake_prefix_path.sh'
+[28.049s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib'
+[28.049s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/bin'
+[28.049s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib/pkgconfig/mocap4r2_optitrack_driver.pc'
+[28.049s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/lib/python3.10/site-packages'
+[28.049s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/bin'
+[28.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.ps1'
+[28.050s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.dsv'
+[28.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.sh'
+[28.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.bash'
+[28.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/mocap4r2_optitrack_driver/package.zsh'
+[28.051s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver/share/colcon-core/packages/mocap4r2_optitrack_driver)
+[28.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mello/mocap4r2_ws/build/rqt_mocap4r2_control' returned '1': AMENT_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs:/home/mello/mocap4r2_ws/install/mocap4r2_optitrack_driver:/home/mello/mocap4r2_ws/install/mocap4r2_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mello/mocap4r2_ws/install/mocap4r2_control/lib:/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mello/mocap4r2_ws/install/mocap4r2_control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mello/mocap4r2_ws/src/mocap4r2/mocap4r2_control/rqt_mocap4r2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control
+[28.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rqt_mocap4r2_control)
+[28.631s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control' for CMake module files
+[28.631s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control' for CMake config files
+[28.632s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/bin'
+[28.632s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/lib/pkgconfig/rqt_mocap4r2_control.pc'
+[28.632s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/lib/python3.10/site-packages'
+[28.632s] Level 1:colcon.colcon_core.environment:checking '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/bin'
+[28.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/share/rqt_mocap4r2_control/package.ps1'
+[28.633s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/share/rqt_mocap4r2_control/package.dsv'
+[28.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/share/rqt_mocap4r2_control/package.sh'
+[28.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/share/rqt_mocap4r2_control/package.bash'
+[28.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/share/rqt_mocap4r2_control/package.zsh'
+[28.634s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mello/mocap4r2_ws/install/rqt_mocap4r2_control/share/colcon-core/packages/rqt_mocap4r2_control)
+[28.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[28.774s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.778s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.778s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.778s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.786s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.787s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mello/mocap4r2_ws/install/local_setup.ps1'
+[28.788s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mello/mocap4r2_ws/install/_local_setup_util_ps1.py'
+[28.789s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mello/mocap4r2_ws/install/setup.ps1'
+[28.791s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mello/mocap4r2_ws/install/local_setup.sh'
+[28.792s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mello/mocap4r2_ws/install/_local_setup_util_sh.py'
+[28.792s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mello/mocap4r2_ws/install/setup.sh'
+[28.794s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mello/mocap4r2_ws/install/local_setup.bash'
+[28.794s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mello/mocap4r2_ws/install/setup.bash'
+[28.795s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mello/mocap4r2_ws/install/local_setup.zsh'
+[28.796s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mello/mocap4r2_ws/install/setup.zsh'
