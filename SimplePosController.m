@@ -26,11 +26,11 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
 
         % Thrust hover/trim value
         % Tune this first with all gains set to 0.
-        gravityGain = -1;
+        gravityGain = -0.3;
 
         % Since 0 makes the drone shoot upward, keep thrust away from 0.
-        thrust_upper_limit = -0.05;
-        thrust_lower_limit = -0.80;
+        thrust_upper_limit = 1;
+        thrust_lower_limit = -1;
 
         % ============================
         % Direct PD gains
@@ -40,11 +40,13 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         % body-frame X position error -> pitch
         Kp_pitch = 0.000005;
         Kd_pitch = 0.000;
+        bias_pitch = 0.0112;
 
         % Roll controller:
         % body-frame Y position error -> roll
         Kp_roll = 0.00000;
         Kd_roll = 0.000;
+        bias_roll = - 0.0610;
 
         % Thrust controller:
         % world-frame Z position error -> thrust correction
@@ -124,7 +126,7 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             pitch = obj.pitch_sign * pitch_raw + obj.pitch_trim;
 
             % Clamp pitch
-            pitch = max(min(pitch, obj.max_tilt), -obj.max_tilt);
+            pitch = max(min(pitch, obj.max_tilt), -obj.max_tilt) + obj.bias_pitch;
 
             % ============================
             % Roll PD controller
@@ -133,10 +135,10 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             roll_raw = obj.Kp_roll * e_xy_body(2) ...
                      + obj.Kd_roll * ev_xy_body(2);
 
-            roll = obj.roll_sign * roll_raw + obj.roll_trim;
+            roll = obj.roll_sign * roll_raw + obj.roll_trim  ;
 
             % Clamp roll
-            roll = max(min(roll, obj.max_tilt), -obj.max_tilt);
+            roll = max(min(roll, obj.max_tilt), -obj.max_tilt) + obj.bias_roll;%- 0.0610;
 
             % ============================
             % Thrust PD controller
