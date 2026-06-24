@@ -32,21 +32,27 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         thrust_upper_limit = 1;
         thrust_lower_limit = -1;
 
+        % Limit derivative damping so noisy position estimates cannot rail thrust.
+        max_thrust_damping = 0.10;
+
+        % Controller sample time in seconds. Match this to the Simulink block rate.
+        sample_time = 0.04;
+
         % ============================
         % Direct PD gains
         % ============================
 
         % Pitch controller:
-        % body-frame X position error -> pitch
+        % X position error -> pitch
         Kp_pitch = 0.000005;
         Kd_pitch = 0.000;
         bias_pitch = 0.0112;
 
         % Roll controller:
-        % body-frame Y position error -> roll
+        % Y position error -> roll
         Kp_roll = 0.00000;
         Kd_roll = 0.000;
-        bias_roll = - 0.0610;
+        bias_roll = -0.0610;
 
         % Thrust controller:
         % world-frame Z position error -> thrust correction
@@ -75,53 +81,52 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         thrust_sign = 1.0;
     end
 
+    properties (DiscreteState)
+        prev_e_pos
+        has_prev_error
+    end
+
     methods (Access = protected)
 
-        function setupImpl(~)
+        function setupImpl(obj)
+            obj.prev_e_pos = zeros(3,1);
+            obj.has_prev_error = false;
         end
 
-        function [thrust, roll, pitch, F_d, e_pos] = stepImpl(obj, pos, vel, measured_yaw, sp_pos, sp_vel, sp_acc, setpoint_yaw)
+        function [thrust, roll, pitch, F_d, e_pos] = stepImpl(obj, pos, measured_yaw, sp_pos, sp_vel, sp_acc, setpoint_yaw)
             %#ok<INUSD>
-            % sp_acc and setpoint_yaw are unused in this simple controller.
+            % measured_yaw, sp_vel, sp_acc and setpoint_yaw are unused in this simple controller.
 
             % Force column vectors
             pos    = pos(:);
-            vel    = vel(:);
             sp_pos = sp_pos(:);
-            sp_vel = sp_vel(:);
 
             % ============================
-            % Position and velocity errors
+            % Position error and internal derivative estimate
             % ============================
 
             e_pos = sp_pos - pos;
-            e_vel = sp_vel - vel;
 
-            % ============================
-            % Convert XY error into body frame
-            % ============================
-            %
-            % This means:
-            %   body X error -> pitch
-            %   body Y error -> roll
-            %
-            % If your yaw is always zero, this does almost nothing.
-            % If the drone yaws, this keeps pitch/roll aligned with the drone body.
+            if obj.has_prev_error
+                e_dot = (e_pos - obj.prev_e_pos) / obj.sample_time;
+            else
+                e_dot = zeros(3,1);
+                obj.has_prev_error = true;
+            end
 
-            psi = measured_yaw;
+            obj.prev_e_pos = e_pos;
 
-            R_world_to_body = [ cos(psi)  sin(psi);
-                               -sin(psi)  cos(psi)];
-
-            e_xy_body  = R_world_to_body * e_pos(1:2);
-            ev_xy_body = R_world_to_body * e_vel(1:2);
+            % Keep XY control direct:
+            %   X error -> pitch
+            %   Y error -> roll
+            % D terms use internally estimated error derivative, like a PD block.
 
             % ============================
             % Pitch PD controller
             % ============================
 
-            pitch_raw = obj.Kp_pitch * e_xy_body(1) ...
-                      + obj.Kd_pitch * ev_xy_body(1);
+            pitch_raw = obj.Kp_pitch * e_pos(1) ...
+                      + obj.Kd_pitch * e_dot(1);
 
             pitch = obj.pitch_sign * pitch_raw + obj.pitch_trim;
 
@@ -132,8 +137,8 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             % Roll PD controller
             % ============================
 
-            roll_raw = obj.Kp_roll * e_xy_body(2) ...
-                     + obj.Kd_roll * ev_xy_body(2);
+            roll_raw = obj.Kp_roll * e_pos(2) ...
+                     + obj.Kd_roll * e_dot(2);
 
             roll = obj.roll_sign * roll_raw + obj.roll_trim  ;
 
@@ -144,11 +149,16 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             % Thrust PD controller
             % ============================
 
-            z_error = e_pos(3);
-            z_vel_error = e_vel(3);
+            thrust_pos_correction = obj.Kp_thrust * e_pos(3);
 
-            thrust_correction = obj.Kp_thrust * z_error ...
-                              + obj.Kd_thrust * z_vel_error;
+            z_error_rate = e_dot(3);
+            thrust_damping_size = obj.Kd_thrust * abs(z_error_rate);
+            thrust_damping_size = min(thrust_damping_size, obj.max_thrust_damping);
+
+            % Size comes from error-rate magnitude. Sign follows the PD derivative.
+            thrust_vel_damping = sign(z_error_rate) * thrust_damping_size;
+
+            thrust_correction = thrust_pos_correction + thrust_vel_damping;
 
             thrust = obj.gravityGain ...
                    + obj.thrust_trim ...
@@ -173,7 +183,22 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             F_d(3) = thrust_correction;
         end
 
-        function resetImpl(~)
+        function resetImpl(obj)
+            obj.prev_e_pos = zeros(3,1);
+            obj.has_prev_error = false;
+        end
+
+        function [sz, dt, cp] = getDiscreteStateSpecificationImpl(~, name)
+            switch name
+                case 'prev_e_pos'
+                    sz = [3 1];
+                    dt = 'double';
+                    cp = false;
+                case 'has_prev_error'
+                    sz = [1 1];
+                    dt = 'logical';
+                    cp = false;
+            end
         end
 
         function [sz1, sz2, sz3, sz4, sz5] = getOutputSizeImpl(~)
