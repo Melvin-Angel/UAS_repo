@@ -1,25 +1,76 @@
 clear; clc; close all;
 
 % --- your input points (Nx3) ---
+% waypoints = [0, 0, 0.35;
+%     0, 2.10, 0.35;
+%     -0.70, 2.10, 0.35;
+%     -0.70, 1.40, 0.35;
+%     0,1.40,1.05;
+%     0,2.10,1.05;
+%     -0.70,2.10,1.05;
+%     -0.70,0.70,1.05;
+%     -1.40,0.70,1.05;
+%     -1.40,0.70,0.35;
+%     -1.40,1.40,0.35;
+%     -0.70,1.40,0.35;
+%     -0.70,0.70,0.35;
+%     -1.40,0.70,0.35;
+%     -1.40,0,0.35;
+%     0,0,0.35];
+
+% --- your input points (Nx3) ---
 waypoints = [0, 0, 0.35;
-    0, 2.10, 0.35;
-    -0.70, 2.10, 0.35;
-    -0.70, 1.40, 0.35;
-    0,1.40,1.05;
-    0,2.10,1.05;
-    -0.70,2.10,1.05;
-    -0.70,0.70,1.05;
-    -1.40,0.70,1.05;
-    -1.40,0.70,0.35;
-    -1.40,1.40,0.35;
-    -0.70,1.40,0.35;
-    -0.70,0.70,0.35;
-    -1.40,0.70,0.35;
-    -1.40,0,0.35;
-    0,0,0.35];
+    0, 0.35, 0.35;
+    % 0, 0.70, 0.35;
+    0, 1.05, 0.35;
+    % 0, 1.40, 0.35;
+    0, 1.75, 0.35;
+    -0.35, 2.10, 0.35;
+    -0.70, 1.75, 0.35;
+    -0.35, 1.40, 0.70;
+    0, 1.75, 1.05;
+    -0.35, 2.10, 1.05;
+    -0.70, 1.75, 1.05;
+    % -0.70, 1.40, 1.05;
+    -0.70, 1.05, 1.05;
+    -1.05, 0.70, 1.05;
+    -1.40, 1.05, 0.70;
+    -1.05, 1.40, 0.35;
+    -0.70, 1.05, 0.35;
+    -1.05, 0.70, 0.35;
+    -1.40, 0.35, 0.35;
+    -1.05, 0.00, 0.35;
+    % -0.70, 0.00, 0.35;
+    -0.35, 0.00, 0.35;
+    0.00, 0.00, 0.35];
+
+vel = 0.5
+velocities = [0, vel, 0;
+    0, vel, 0;
+    0, vel, 0;
+    0, vel, 0;
+    -vel, 0, 0;
+    0, -vel, 0;
+    vel, 0, vel;
+    0, vel, 0;
+    -vel, 0, 0;
+    0, -vel, 0;
+    % 0, -vel, 0;
+    0, -vel, 0;
+    -vel, 0, 0;
+    0, vel, -vel;
+    vel, 0, 0;
+    0, -vel, 0;
+    -vel, 0, 0;
+    0, -vel, 0;
+    vel, 0, 0;
+    % 0, 0, 0;
+    vel, 0, 0;
+    0, 0, 0];
 
 % --- call the function ---
-smooth_path = quintic_interp(waypoints, 10);
+% smooth_path = quintic_interp(waypoints, 10);
+smooth_path = quintic_interp(waypoints, velocities, 10);
 % N = size(waypoints, 1);
 % w_uniform = ones(N, 1);
 % smooth_path = bspline_interp(waypoints, w_uniform, 10);
@@ -39,7 +90,7 @@ plot3(ax, smooth_path(:,1), smooth_path(:,2), smooth_path(:,3), ...
     'b', 'LineWidth', 2.5);
 
 scatter3(ax, waypoints(:,1), waypoints(:,2), waypoints(:,3), ...
-    100, 'r', 'filled', 'MarkerEdgeColor','w','LineWidth',1.5);
+    100, 'r', 'filled', 'MarkerEdgeColor','w','LineWidth',2.5);
 
 for i = 1:size(waypoints,1)
     text(ax, waypoints(i,1)+0.1, waypoints(i,2)+0.1, waypoints(i,3)+0.15, ...
@@ -53,4 +104,5 @@ ylabel(ax,'Y','Color','w');
 zlabel(ax,'Z','Color','w');
 title(ax,'quintic\_interp demo','Color','w','FontSize',13);
 view(ax, 35, 25);
+axis(ax, 'equal'); 
 rotate3d(ax,'on');
