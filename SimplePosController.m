@@ -35,8 +35,10 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         % Limit derivative damping so noisy position estimates cannot rail thrust.
         max_thrust_damping = 0.50;
 
-        % Clamp accumulated integral error in each axis.
-        max_i_error = 0.50;
+        % Clamp accumulated integral error per axis.
+        max_i_error_pitch = 0.50;
+        max_i_error_roll = 0.50;
+        max_i_error_thrust = 0.50;
 
         % Controller sample time in seconds. Match this to the Simulink block rate.
         sample_time = 0.04;
@@ -124,8 +126,12 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
 
             obj.prev_e_pos = e_pos;
 
+            i_error_limit = [obj.max_i_error_pitch;
+                             obj.max_i_error_roll;
+                             obj.max_i_error_thrust];
+
             obj.i_error = obj.i_error + e_pos * obj.sample_time;
-            obj.i_error = max(min(obj.i_error, obj.max_i_error), -obj.max_i_error);
+            obj.i_error = max(min(obj.i_error, i_error_limit), -i_error_limit);
 
             % Keep XY control direct:
             %   X error -> pitch

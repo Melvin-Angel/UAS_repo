@@ -13,7 +13,7 @@ function smooth_path = quintic_interp(waypoints, velocities, n_interp)
 %     n_interp   : interior points inserted between each pair (default 10)
 %
 %   OUTPUT
-%     smooth_path : Mx3 matrix — all original waypoints + interpolated pts
+%     smooth_path : Mx3 matrix - all original waypoints + interpolated pts
 
     N = size(waypoints, 1);
     M = N - 1;
@@ -41,7 +41,7 @@ function smooth_path = quintic_interp(waypoints, velocities, n_interp)
     T_nodes = [0; cumsum(seg_len / total_len * M)];
 
     % ------------------------------------------------------------------
-    % 2. Velocities — use supplied or auto-compute
+    % 2. Velocities - use supplied or auto-compute
     % ------------------------------------------------------------------
     if nargin < 2 || isempty(velocities)
         % central differences, scaled
@@ -55,7 +55,7 @@ function smooth_path = quintic_interp(waypoints, velocities, n_interp)
         VEL = VEL * vel_scale;
     else
         if ~isequal(size(velocities), [N, 3])
-            error('velocities must be Nx3 — one [vx,vy,vz] row per waypoint.');
+            error('velocities must be Nx3 one [vx,vy,vz] row per waypoint.');
         end
         VEL = velocities;
     end
