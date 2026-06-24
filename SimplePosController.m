@@ -22,7 +22,7 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         % ============================
 
         % Max roll/pitch command in radians
-        max_tilt = 0.2618;        % 15 degrees
+        max_tilt = 3.14;        % 15 degrees
 
         % Thrust hover/trim value
         % Tune this first with all gains set to 0.
@@ -33,7 +33,10 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         thrust_lower_limit = -1;
 
         % Limit derivative damping so noisy position estimates cannot rail thrust.
-        max_thrust_damping = 0.10;
+        max_thrust_damping = 0.50;
+
+        % Clamp accumulated integral error in each axis.
+        max_i_error = 0.50;
 
         % Controller sample time in seconds. Match this to the Simulink block rate.
         sample_time = 0.04;
@@ -44,20 +47,23 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
 
         % Pitch controller:
         % X position error -> pitch
-        Kp_pitch = 0.000005;
-        Kd_pitch = 0.000;
-        bias_pitch = 0.0112;
+        Kp_pitch = 0.16;
+        Kd_pitch = 0.2;
+        Ki_pitch = 0.010;
+        bias_pitch = 0.0091;
 
         % Roll controller:
         % Y position error -> roll
-        Kp_roll = 0.00000;
-        Kd_roll = 0.000;
-        bias_roll = -0.0610;
+        Kp_roll = 0.16;
+        Kd_roll = 0.2;
+        Ki_roll = 0.010;
+        bias_roll = -0.0363;
 
         % Thrust controller:
         % world-frame Z position error -> thrust correction
-        Kp_thrust = 0.070;
-        Kd_thrust = 7.0;
+        Kp_thrust = 0.29;
+        Kd_thrust = 0.34;
+        Ki_thrust = 0.020;
 
         % ============================
         % Manual trims
@@ -84,6 +90,7 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
     properties (DiscreteState)
         prev_e_pos
         has_prev_error
+        i_error
     end
 
     methods (Access = protected)
@@ -91,6 +98,7 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         function setupImpl(obj)
             obj.prev_e_pos = zeros(3,1);
             obj.has_prev_error = false;
+            obj.i_error = zeros(3,1);
         end
 
         function [thrust, roll, pitch, F_d, e_pos] = stepImpl(obj, pos, measured_yaw, sp_pos, sp_vel, sp_acc, setpoint_yaw)
@@ -116,17 +124,22 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
 
             obj.prev_e_pos = e_pos;
 
+            obj.i_error = obj.i_error + e_pos * obj.sample_time;
+            obj.i_error = max(min(obj.i_error, obj.max_i_error), -obj.max_i_error);
+
             % Keep XY control direct:
             %   X error -> pitch
             %   Y error -> roll
             % D terms use internally estimated error derivative, like a PD block.
+            % I terms are clamped to prevent windup.
 
             % ============================
             % Pitch PD controller
             % ============================
 
             pitch_raw = obj.Kp_pitch * e_pos(1) ...
-                      + obj.Kd_pitch * e_dot(1);
+                      + obj.Kd_pitch * e_dot(1) ...
+                      + obj.Ki_pitch * obj.i_error(1);
 
             pitch = obj.pitch_sign * pitch_raw + obj.pitch_trim;
 
@@ -138,7 +151,8 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             % ============================
 
             roll_raw = obj.Kp_roll * e_pos(2) ...
-                     + obj.Kd_roll * e_dot(2);
+                     + obj.Kd_roll * e_dot(2) ...
+                     + obj.Ki_roll * obj.i_error(2);
 
             roll = obj.roll_sign * roll_raw + obj.roll_trim  ;
 
@@ -149,7 +163,8 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
             % Thrust PD controller
             % ============================
 
-            thrust_pos_correction = obj.Kp_thrust * e_pos(3);
+            thrust_pos_correction = obj.Kp_thrust * e_pos(3) ...
+                                  + obj.Ki_thrust * obj.i_error(3);
 
             z_error_rate = e_dot(3);
             thrust_damping_size = obj.Kd_thrust * abs(z_error_rate);
@@ -186,6 +201,7 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
         function resetImpl(obj)
             obj.prev_e_pos = zeros(3,1);
             obj.has_prev_error = false;
+            obj.i_error = zeros(3,1);
         end
 
         function [sz, dt, cp] = getDiscreteStateSpecificationImpl(~, name)
@@ -197,6 +213,10 @@ classdef SimplePosController < matlab.System & matlab.system.mixin.Propagates
                 case 'has_prev_error'
                     sz = [1 1];
                     dt = 'logical';
+                    cp = false;
+                case 'i_error'
+                    sz = [3 1];
+                    dt = 'double';
                     cp = false;
             end
         end
